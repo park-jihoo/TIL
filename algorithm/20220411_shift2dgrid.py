@@ -1,5 +1,6 @@
-import numpy as np
 from typing import List
+
+import numpy as np
 
 
 def shift_grid(grid: List[List[int]], k: int) -> List[List[int]]:

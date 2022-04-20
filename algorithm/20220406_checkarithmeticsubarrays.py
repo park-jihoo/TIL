@@ -1,6 +1,3 @@
-from astroid import List
-
-
 def check_arithmetic_subarrays(nums, l, r):
     answer = []
     for i, j in zip(l, r):
