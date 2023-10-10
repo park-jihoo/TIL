@@ -814,6 +814,43 @@ _thumbnail: https://www.notion.so/images/page-cover/solid_beige.png
 
 # Dynamic Programming
 
+    - Divide and Conquer: divide the problem into a number of subproblems that are smallere instances of the same problem then solve them recursively
+
+    - Top-down approach: if we nened the result in na future recursive call, we can use the stored value and it’s called **memoization →** solves each subproblem just once
+
+    - Bottom-up approach: comopute the solutions for smaller things first then the answer will be stored at r[n]
+
 ***
 
 # All Pairs Shortest Path
+
+    - Sparse Graph는 edge가 적어서 |E| = O(|V|)인 그래프이고 dense graph는 |E| = \Theta (V^2)인 그래프이다.
+
+    - input의 경우는 n \times n matrix W = (w_{ij})가 이용되는데, 이들은 현재의 edge weight를 담고 있다.
+
+    - output은 shortest path를 저장하는 L, predecessor matrix \Pi = (\pi_{ij})이다. 만약 path가 없다면 \pi_{ij} = NIL
+
+    - If we use dijkstra for all vertices, then running time will be O(V \times (V+E) \log V)
+
+    - If we use Bellman-Ford algorithm for all vertices, the running time will be O(V^2E)
+
+    - Using Dynamic Programming, l_{ij}^{(0)} = \begin{cases}
+       0 &\text{if } i=j \\
+       \infty &\text{if } i \not = j
+    \end{cases}, l_{ij}^{(r)} = \min \lbrace l_{ik}^{(r-1)} + w_{kj}: 1 \leq k \leq n \rbrace
+
+    - SLOW-APSP: 각각의 vertex에 대해 extended-shortest path를 적용하는 것으로, 효율은 dijkstra보다 안 좋음
+
+    - FAST-APSP by using matrix multipliication: L^{(n-1)} = L^{(0)} \odot W \odot \dotsb \odot W = L^{(0)} \odot W ^{(n-1)}이기에, matrix multiplication을 진행해 L^{2^{|\log (n-1)|}} = L ^{(n-1)}로 두면 계산 과정이 훨씬 줄어든다.
+
+    - Floyd-Warshall Algorithm: \Theta(V^3)
+
+    - An intermediate vertex of simple path p = \lang v_1,v_2,...,v_l \rang is any vertex of p except v_1 or v_l
+
+    - There are 2 cases: k is not an intermediate vertex of p, k is an intermediate vertex of p
+
+    - first case에서 d_{ij}^{(k)} = d_{ij}^{(k-1)}이고, second case에서 d_{ij}^{(k)}=d_{ik}^{(k-1)}+d_{kj}^{(k-1)}이 됨
+
+    - 두 가지를 합치면, d_{ij}^{(k)}=\min \lbrace d_{ij}^{(k-1)}, d_{ik}^{(k-1)}+d_{kj}^{(k-1)} \rbrace이고 k가 0이면 w_{ij}이다.
+
+    - \pi_{ij}^{(k)} = \begin {cases} \pi_{ij}^{(k)} & \text{if} \ d_{ij}^{(k-1)} > d_{ik}^{(k-1)}+d_{kj}^{(k-1)} \\ \pi_{ij}^{(k)}  & \text{if} \ d_{ij}^{(k-1)} \leq d_{ik}^{(k-1)}+d_{kj}^{(k-1)} \end{cases} 

@@ -423,8 +423,12 @@ class: Coursework
 
     	### Isolation Level
 
-    	||
-    	||
+    	|                  | Dirty Reads  | Non-repeatable reads | Phantom reads |
+    	|------------------|--------------|----------------------|---------------|
+    	| Read Uncommitted | Possible     | Possible             | Possible      |
+    	| Read Committed   | Not possible | Possible             | Possible      |
+    	| Repeated Read    | Not possible | Not possible         | Possible      |
+    	| Serializable     | Not possible | Not possible         | Not possible  |
 
     	### Garbage collection
 
@@ -435,3 +439,29 @@ class: Coursework
     	- Delete all versions with CTS is less then the minimum STS of running transactions
 
 # Column Store RDBMS
+
+    - Data for some column is close together
+
+    - Values in same columns are often repeated → we can compress the data
+
+    - Dictionary Encoding: create sorted dictionary of each column
+
+    	- Consists of encoded values in bit string and corresponding original values
+
+    	- Values are stored in sorted order
+
+    	- We can use array index and code size to get each encoded value
+
+    - Insert/Delete/Update
+
+    	- If values are unique, then we need to recreate dictionaries and re-encode columns
+
+    	- Solution: Delta with row store
+
+    		- Divide table into main and delta
+
+    		- Delta store captures recent changes
+
+    - Contiguous storage : store table in contiguously allocated memory
+
+    - Paged storage : split table into multiple pages

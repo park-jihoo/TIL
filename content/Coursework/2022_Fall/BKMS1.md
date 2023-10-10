@@ -720,6 +720,28 @@ class: Coursework
 
     - MVCC가 overhead를 해결하는 법
 
+    	- original DB에 copy the latest version with CTS is less than minimum STS of running transactions.
+
+    	- 즉 현재 실행중인 것들의 시작보다 빨리 커밋된 것 중 최신 거 제외하고 다 날려버림
+
     - Lost update 해결법: 만약 먼저 update, commit된 트랜잭션이 있다면, 다른 커밋하지 않은 트랜잭션은 abort된다.
 
 # Logging and Recovery
+
+    - Atomicity와 Durability를 보장하기 위한 장치임
+
+    - RAM에 있는 Database는 컴퓨터를 끄면 날아가는데, 이를 disk로 넘기기 위한 장치이다. 하지만 RAM과 disk 사이에 속도 차이가 있어서 buffer에 저장하는 것
+
+    - Logging Schemes
+
+    	- Physical Logging: DB States(Before Image, After Image로 각각 변경 전후를 기록)
+
+    	- Logical Logging: record the high-level operations by transactions, 즉 처음부터의 변경 사항을 다 저장함
+
+    - Write-ahead logging: write all log entries of transaction before commit, buffer page before persisting
+
+    - ARIES recovery algorithm: analysis, redo, undo를 통해 Atomicity와 Durability를 보장함
+
+    - Redo: get back to state directly before crash
+
+    - Undo: undo effects of aborted transactions

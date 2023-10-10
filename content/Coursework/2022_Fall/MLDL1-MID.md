@@ -502,12 +502,166 @@ class: Coursework
 
     	- Cost complexity pruning → introduce tuning parameter \alpha
 
+    		```undefined
+    		\sum_{m=1}^{|T|}\sum_{x_i\in R_m}(y_i-\hat y_{R_m})^2 + \alpha|T|
+    		```
+
     	- Similar to LASSO, and select an optimal value \hat\alpha with cross-validation
 
     ## Classification trees
 
+    	- For a classification tree, we predict that each observation belongs to the most commonly occuring class of training observations in the region to which it belongs
+
+    	- The Gini index is defined by
+
+    		```undefined
+    		G = \sum_{k=1}^K\hat p_{mk}(1-\hat p_{mk})
+    		```
+
+    		is a measure of total variance across the K classes
+
+    	- An alternative to the gini index is cross-entropy, given by
+
+    		```undefined
+    		D = -\sum_{k=1}^K\hat p_{mk}\log\hat p_{mk}
+    		```
+
 # Another Tree-based methods
+
+    ## Bagging
+
+    	- Bootstrap aggregation, or bagging is a general purpose procedure for reducing the variance of a machine learning method. Averaging a set of observations reduce variance
+
+    		```undefined
+    		\hat f_{bag}(x) = \frac 1B\sum_{b=1}^B\hat f^{*^b}(x)
+    		```
+
+    	- In classification tree, take majority vote
+
+    	- Remaining one-third of the observations not used to fit given bagged trees are referred to as the out of bag(OOB) distribution
+
+    ## Random Forest
+
+    	- Random forests provide an improvement over bagged trees by way of a small tweak that decorrelates the trees
+
+    	- When building decision trees, each time a split in a tree is considered, a random selection of m predictors is chosen as split candidates from the full set of p predictors. The split is allowed to use only one of those m predictors
+
+    ## Boosting
+
+    	- Boosting works in similar way with bagging, except that the trees are grown sequentially: each tree is grown using information from previously grown trees
+
+    	- Set \hat f(x_i)=0 and r_i=y_i for all i=1,…,n in the training set
+
+    	- For b=1,2,…,B, repeat
+
+    		- Fit a tree \hat f_b with d splits to surrogate training data \{x_i, r_i\}_{i=1}^n
+
+    		- Update \hat f by adding in a shrunken version of the new tree
+
+    			```undefined
+    			\hat f(x)\leftarrow\hat f(x)+\lambda \hat f_b(x)
+    			```
+
+    		- Update the residual
+
+    			```undefined
+    			r_i \leftarrow r_i-\lambda\hat f_b(x_i)
+    			```
+
+    	- Output the boosted model
+
+    		```undefined
+    		\hat f(x) = \sum_{b=1}^B \lambda\hat f_b(x)
+    		```
+
+    	- The boosting approach learns slowly
+
+    	- By fitting small trees to the residuals we slowly improve \hat f in areas where it doesn’t perform well. The shrinkage parameter \lambda slows the process down even further
+
+    	- Parameter: number of tree B, shrinkage parameter \lambda, number of splits d in each tree
 
 # Support Vector Machine
 
+    > 💡 We try and find a plane that separates the classes in feature space
+
+    ## Hyperplane
+
+    	- Hyperplane
+
+    		```undefined
+    		\beta_0+\beta_1X_1+\beta_2X_2+\cdots+\beta_pX_p = 0
+    		```
+
+    	- In this hyperplane, \beta = (\beta_1, \beta_2,...,\beta_p) is called the normal vector
+
+    	- If Y_i\cdot f(X_i) > 0 for all i, f(X)=0 defines a separating hyperplane
+
+    ## Classifier
+
+    	- Maximal margin classifier
+
+    		```undefined
+    		\begin{aligned}\text{maximize}_{\beta_0,...,\beta_p}\text{ } & M \\\text{subject to} &\sum_{j=1}^p\beta_j^2 = 1,\\&y_i(\beta_0+\beta_1x_{i1}+...+\beta_px_{ip})\ge M\\&\forall i = 1,...,n\end{aligned}
+    		```
+
+    	- Support vector classifier(maximizes a soft margin)
+
+    		```undefined
+    		\begin{aligned}\text{maximize}_{\beta_0,...,\beta_p}\text{ } & M \\\text{subject to} &\sum_{j=1}^p\beta_j^2 = 1,\\&y_i(\beta_0+\beta_1x_{i1}+...+\beta_px_{ip})\ge M(1-\xi_i),\xi_i\ge0&\forall i = 1,...,n\\&\sum_{i=1}^n\xi_i\le C\end{aligned}
+    		```
+
+    	- If C becomes larger then margin becomes wider
+
+    ## Kernels
+
+    	- Inner product \lang x_i, x_{i'} \rang = \sum_{i=1}^px_{ij}x_{i'j}
+
+    	- The linear support vector classifier can be represented as
+
+    		```undefined
+    		f(x) = \beta_0 + \sum_{i=1}^n \alpha_i\lang x,x_i\rang
+    		```
+
+    	- Kernel: a generalization of the inner product of the form K(x_i, x_{i'}) for vectors x_i,x_{i'}\le\R^p
+
+    		```undefined
+    		f(x) = \beta_0 +\sum_{i\in\mathcal S}\hat\alpha_i K(x, x_i)
+    		```
+
+    ## Multi Class
+
+    	- OVA(one vs all): fit K different 2-class SVM classifiers \hat f_k(x)
+
+    	- OVO(one vs one): fit all \begin{pmatrix}K\\2\end{pmatrix} pairwise classifiers \hat f_{kl}(x)
+
 # Unsupervised Learning
+
+    ## PCA
+
+    	- PCA produces a low-dimensional representation of a dataset. Finds a sequence of linear combinations of the variables that have maximal variance
+
+    	- First principal component of the set is
+
+    		```undefined
+    		Z_1 = \phi_{11}X_1+\phi_{21}X_2+...+\phi_{p1}X_p
+    		```
+
+    	- We refers to the elements \phi_{k1} as the loadings of first principal component.
+
+    	- Score: z_{i1}=\phi_{11}\phi_{i1}+\phi_{21}\phi_{i2}+...+\phi_{p1}\phi_{ip}
+
+    	- We want to maximize \frac 1n \sum_{i=1}^n z_{i1}^2 → solve by SVD
+
+    	- Strength of each component is about proportion of variance explained by each one
+
+    		```undefined
+    		\frac{\sum_{i=1}^n z_{im}^2}{\sum_{j=1}^p\sum_{i=1}^nx_{ij}^2}
+    		```
+
+    ## Clustering
+
+    	- Refers to a very broad set of techniques for finding subgroups, or clusters in a data set
+
+    	- K-means clustering: seek to partition the observations into a pre-specifed number of clusters
+
+    	- Hierarchical clustering: we do not know in advance how many clusters we want.

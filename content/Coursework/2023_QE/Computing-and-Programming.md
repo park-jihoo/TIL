@@ -566,10 +566,66 @@ class: Coursework
 
     ## Functions in C
 
+    	- Definition: header, any variable declared in the body is local to the function
+
+    	- Call: the caller must transmit proper arguments. Calling is possible only when the callee is declared before
+
+    	- Declaration(function prototype): informs the compiler about relevant properties
+
+    	### Memory Operation
+
+    	- Calling(Passing arguments to the function)
+
+    	- Start Callee(Reserve stack for the function)
+
+    	- End Callee(Return)
+
+    	- Return to caller
+
+    	> 📖 C uses stack to manage memory operation of a function call
+
     ## Pointers
+
+    	- A pointer variable contains an address of a memory object
+
+    	- Address operator & and indirection operator *
+
+    	- Swapping can be operated with call by reference
+
+    	- Null pointer: A special case pointer that points to nothing
 
 # I/O in C
 
+    - One Character I/O: putchar, getchar
+
+    - Buffered I/O: keyboard input is buffered until we press Enter
+
+    - Formatted I/O: printf, scanf(prints/scans out ASCII text embedded with values)
+
+    ### File I/O
+
+    - File pointer: a pointer that points to a type FILE
+
+    - fopen() returns a file pointer to the physical file “file name”
+
+    - fgetc, fputc, fscanf, fprintf
+
 # Dynamic data structures in C
+
+    ## Structures
+
+    	- A convenient way of representing objects that are best represented by combinations of the basic data types
+
+    	- Declaration, accessing members, memory allocation
+
+    	- C structure enable programmers to define their own aggregate type by typedef
+
+    ## Dynamic memory allocation
+
+    	- Allocation: malloc function
+
+    		- Parameter: requested memory size, returns a pointer to the reserved block or NULL when failed
+
+    	- Deallocation: free
 
 # Algorithm Basics

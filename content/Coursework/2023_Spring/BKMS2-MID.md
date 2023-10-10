@@ -630,7 +630,15 @@ class: Coursework
 
     - Partitions are replicated across servers
 
+    	- Fault tolerance by redundancy
+
+    	- Allows to scale to more consumers
+
     - Each partition has one dedicated leader
+
+    	- Leader access topics updates
+
+    	- Synchronizes with other replicas
 
     ### Example
 
@@ -685,7 +693,15 @@ class: Coursework
 
     - Maintains multiple levels containing sorted/indexed data
 
+    	- Upper levels are stored in main memory
+
+    	- Lower levels are stored on hard disk
+
+    	- Constant size ratio between consecutive level
+
     - Data from one level is merged into next at overflow
+
+    	- Merge operations need only sequential writes
 
     ### Reading LSM Tree
 
@@ -694,6 +710,10 @@ class: Coursework
     - Checking each level is fast as data is sorted/indexed
 
     - Bloom filters reduce the number of levels to consider
+
+    	- Bloom filter captures non-empty hash buckets
+
+    	- Used to summarize keys present at each level
 
     ## ksqlDB
 
@@ -709,24 +729,291 @@ class: Coursework
 
     ### ksqlDB Collection Types
 
-    ||
-    ||
+    |           | Stream                                                   | Table                                                    |
+    |-----------|----------------------------------------------------------|----------------------------------------------------------|
+    | Insertion | New entries override<br/>prior entries with<br/>same key | New entries override<br/>prior entries with<br/>same key |
+    | Purpose   | Represent Historical<br/>information                     | Represent the <br/> current state                        |
 
     ### ksqlDB Example
 
     - Creating Collections
 
+    	```sql
+    	CREATE STREAM priceHistory(
+    	    symbol VARCHAR, price INT)
+    	    WITH (kafka_topic='tickerTopic', value_format='json');
+    	CREATE TABLE curStockPrice(
+    	    symbol VARCHAR PRIMARY KEY, price INT)
+    	    WITH (kafka_topic='tickerTopic', value_format='json');
+    	
+    	```
+
     - Deriving Collections
+
+    	```plain text
+    	CREATE STREAM appleTicker AS
+    	    SELECT symbol, price FROM priceHistory
+    	    WHERE symbol = 'AAPL';
+    	CREATE STREAM advertisementStream AS
+    	    SELECT * from clickStream C JOIN advertisertable A ON C.adId = A.adId;
+    	
+    	```
 
     - Inserting Data
 
+    	```plain text
+    	INSERT INTO temperatureStream(Location, temperature)
+    	VALUES ('San Francisco', 70);
+    	
+    	```
+
     - Pull Query
+
+    	```plain text
+    	SELECT * FROM pageviewsByReginTable WHERE region = 'San Francisco';
+    	
+    	```
 
     - Push Query
 
+    	```plain text
+    	SELECT * FROM clickEventStream WHERE region='San Francisco' EMIT CHANGES;
+    	
+    	```
+
     ### Query Types
 
-    ||
-    ||
+    |                          | Push Query                  | Pull Query                                 |
+    |--------------------------|-----------------------------|--------------------------------------------|
+    | Data Sources             | Table, Stream               | Table                                      |
+    | Specific<br/>Restriction | -                           | Non-windowed<br/>Aggregation:lookup by key |
+    | Life Time                | Keeps returning<br/>updates | Returns one result                         |
 
 # SpatialDB
+
+    ## Types
+
+    ### Types of Spatial Data
+
+    - Point Data: Characterized completed by the location
+
+    - Region Data: Defined by a boundary and may have anchor location
+
+    ### Types of Spatial Queries
+
+    - Spatial range queries: show me restaurants in Seoul
+
+    - Nearest neighbor queries: show me the nearest restaurant to my location
+
+    - Spatial join queries: show me the restaurants in Seoul that are Korean
+
+    ## Indexing Types
+
+    - B+ trees for spatial data
+
+    - Space-filling curves
+
+    - Region quad-trees/region oct-trees
+
+    - Point region quad-tree
+
+    - Grid files
+
+    - R-trees
+
+    ## Problems with B+ trees
+
+    - Close points in 2D are not close in index
+
+    - Answering range query is inefficient
+
+    - Could use one tree per dimension and merge RIDS(but various overheads)
+
+    ## Z-ordering
+
+    - Numbers each space coordinate
+
+    - Close points have close numbers(counterexample Hilbert curves)
+
+    - Binary representation for each coordinate
+
+    - Z-ordering assigns number $a_1b_1a_2b_2...a_nb_n$
+
+    ### Z-order curve example
+
+    ```mermaid
+    %%{
+      init: {
+        'theme': 'base',
+        'themeVariables': {
+          'secondaryColor': '#006100',
+          'tertiaryColor': '#fff'
+        }
+      }
+    }%%
+    flowchart BT
+        subgraph sub1
+        a[3,0] ~~~ b[2,0] ~~~ c[1,0] ~~~ d[0,0]
+        end
+        subgraph sub2
+        e[3,1] ~~~ f[2,1] ~~~ g[1,1] ~~~ h[0,1]
+        end
+        subgraph sub3
+        i[3,2] ~~~ j[2,2] ~~~ k[1,2] ~~~ l[0,2]
+        end
+        subgraph sub4
+        m[3,3] ~~~ n[3,2] ~~~ o[1,3] ~~~ p[0,3]
+        end
+        sub1 ~~~ sub2 ~~~ sub3 ~~~ sub4
+        a-->e-->b-->f-->i-->m-->j-->n-->c
+        c-->g-->d-->h-->k-->o --> l --> p
+
+    ```
+
+    ### Indexing with Z-ordering
+
+    - Z-ordering reduces multi-dimensional spaces to 1d
+
+    - Can use standard index(e.g. B+ tree) to index Z value
+
+    ## Region Quad Trees
+
+    - Z ordering enables us to store points efficiently
+
+    - Storing entire regions as set of point is inefficient
+
+    - Region quad trees divide space recursively into 4 quadrants
+
+    ### Grid Files
+
+    - Region quad tree partition independently of data
+
+    - This is not optimal if data is highly skewed
+
+    - Grid files adapt space partition to data distribution
+
+    - More find-grained representation for high density regions
+
+    - If 3D, we use octrees
+
+    | QuadTrees                                         | Octrees                                               |
+    |---------------------------------------------------|-------------------------------------------------------|
+    | Represents 2D planes                              | Represents 3D cubical planes                          |
+    | 4 children                                        | 8 children                                            |
+    | Each child represents<br/>a quadrant of sub plane | Each child represents <br/> a 3D octant of sub volume |
+
+    > Tree branches until each sub region satisfies some property!
+
+    ### Desiderata on Recursive Decompositions
+
+    - Recursivie decomposition: specify information more robustly at a lower level of description
+
+    - Quadtrees and octrees are based on recursive decomposition
+
+    - Variations of these trees are based on:
+
+    	- Type of data represented
+
+    	- Property sought through decompositions
+
+    	- Variable or static resolution
+
+    ### Quad Tree Example
+
+    | B |   | F | G |
+    |---|---|---|---|
+    |   |   | H | I |
+    | D |   | J | K |
+    |   |   | L | M |
+
+    ### Constructing Region Quadtrees
+
+    - Iterate through a multi-dimensional array row-by-row
+
+    - If all 4 sub-regions exhibit desired property, merge into single node
+
+    - $O(n^2)$ runtime complexity when $n$ is the number of points
+
+    - Construction algorithm is called bottom-up neighbor finding
+
+    ### Region Quadtree Operations
+
+    - Either node is white, output is white
+
+    - Both nodes are black, output is black
+
+    - One node is black and other is gray, gray node's subtree is copied to output tree
+
+    - Both nodes are gray, output is gray and recurse to children in input quadtrees
+
+    ## Application of Spatial Data Structures
+
+    - Image processing
+
+    - Image compression
+
+    - Location queries
+
+    - 3D rendering
+
+    - Nearest-neighbor search
+
+    - Object collision
+
+    - Color quantization
+
+    ## R Trees
+
+    - Adaptation of B+ tree to handle spatial data
+
+    - Search key: multi-dimensional bounding box
+
+    - Data Entries: (bounding box, rid) -> box is the smallest box of the data entry
+
+    - Index Entries: (bounding box, pointer to child)
+
+    ### Lookups in R Trees
+
+    - Compute bounding box for query object. It can be single point or region
+
+    - Start at root node of R Tree
+
+    - Check children containing query object(may need to check multiple children)
+
+    ### Insertion in R Trees
+
+    - Compute bounding box for new object
+
+    - Start at root node of R Tree
+
+    - Select child needing minimal extension for object
+
+    - Insert object at leaf node(may have to enlarge bounding box, may have to rebalance the tree)
+
+    ### Split problem
+
+    - Given M+1 entries, how to split into 2 nodes?
+
+    - Guttman states in the original paper that there are $2^{M+1}$ possibilities and M=50 would be reasonable to assume
+
+    - That means, the naive approach to look at all possible subsets and pick the best one is not practical
+
+    ### Approach with tQuadratic cost
+
+    - Searches for split with smallest possible area
+
+    - Idea
+
+    	- Search for pairs of entries that would cause the largest area if placed in the same node. Then put these entries in two different nodes
+
+    	- Then: Considier all remaining entries and consider the one for which the increase in area has the largest possible difference between two nodes.
+
+    	- This entry is assignned to the node with the smaller increase
+
+    	- Repeat until all entries are assigned to a node
+
+    ## R* Tree
+
+    - Various subsequent publications proposed improvements of R tree via better split algorithms
+
+    - The most prominent approach is described as R* Tree

@@ -204,7 +204,7 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- [https://matrixcalc.org/ko/det.html#determinant-Gauss({{2,0,1,2,0},{2,-1,0,1,1},{0,1,2,1,2},{-2,0,2,-1,2},{2,0,0,1,1}})](https://matrixcalc.org/ko/det.html#determinant-Gauss%28%7B%7B2,0,1,2,0%7D,%7B2,-1,0,1,1%7D,%7B0,1,2,1,2%7D,%7B-2,0,2,-1,2%7D,%7B2,0,0,1,1%7D%7D%29) 돌려본 거 첨부
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231009T222519Z&X-Amz-Expires=3600&X-Amz-Signature=d88a194b24cfcab700fa28c6f4612efd91f796a6409358cd9ef7362c77ede8e8&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004159Z&X-Amz-Expires=3600&X-Amz-Signature=17d85b87a4c0e88c6d812590f6d0a0f0ee70c26b4534d71d6884bfdc4a0c1707&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Question 4.3
 
@@ -346,7 +346,15 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- AA^\top, A^\top A  계산 필요
 
+    		```undefined
+    		AA^\top = \begin{bmatrix}17&8\\8&17\end{bmatrix},A^\top A = \begin{bmatrix}13&12&2\\12&13&-2 \\2&-2&8\end{bmatrix} 
+    		```
+
     	- Eigenvectors for matrix A^\top A
+
+    		```undefined
+    		v_1 = \begin{pmatrix}-2/3\\2/3\\1/3\end{pmatrix}, \lambda_1 = 0\\v_2 = \begin{pmatrix}\sqrt2/6\\-\sqrt2/6\\2\sqrt2/3\end{pmatrix}, \lambda_2 = 9\\v_3 = \begin{pmatrix}\sqrt2/2\\\sqrt2/2\\0\end{pmatrix}, \lambda_3 = 25\\
+    		```
 
     	- \Sigma = \begin{pmatrix}5&0&0\\0&3&0\end{pmatrix}
 
@@ -354,8 +362,252 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     ## Problem 4.9
 
+    	- Find the singular value decomposition of
+
+    		```undefined
+    		A = \begin{bmatrix}2&2\\-1&1\end{bmatrix}
+    		```
+
+    	- A^\top A = \begin{bmatrix}5&3\\3&5\end{bmatrix}, v_1 = \begin{bmatrix}\sqrt2/2\\\sqrt2/2\end{bmatrix}, \sigma_1 = 2\sqrt2,v_2 = \begin{bmatrix}-\sqrt2/2\\\sqrt2/2\end{bmatrix}, \sigma = \sqrt2,
+
+    	- \Sigma = \begin{bmatrix}2\sqrt2&0\\0&\sqrt2\end{bmatrix}
+
+    	- U = \begin{bmatrix}1&0\\0&1\end{bmatrix}
+
     ## Problem 4.11
+
+    	- Show that for any A \in \R^{m\times n} the matrices A^\top A and A A^\top possess the same nonzero eigenvalues
+
+    	- Let \lambda be a nonzero eigenvalue of A^\top A. Then there exists a nonzero vector x \in \mathbb{R}^n such that A^\top Ax = \lambda x
+
+    	- Similarly, let \mu be a nonzero eigenvalue of A A^\top. Then there exists a nonzero vector y \in \mathbb{R}^m such that A A^\top y = \mu y
+
+    	- (A^⊤Ax)^⊤=(Ax)^⊤A^⊤=x^⊤A^⊤A=x^⊤λx=λ∥x∥^2
+
+    	- 또, y^\top AA^\top y = y^\top\mu y에 y^\top A A^\top y = (A^\top y)^\top (A^\top y) = |A^\top y|^2를 합치면, \|A^\top y\|^2 = \mu\|y\|^2
+
+    	- 결국 위의 2개의 식이 같은 form을 가지게 되어, λ∥x∥^2=μ∥y∥^2라고 할 수 있고, 이 때 \lambda, \mu는 nonzero eigenvalue이기 때문에 \lambda = \mu
 
 # Week 5
 
+    ## Problem 5.1
+
+    	- Compute the derivative f'(x) for f(x) = \log(x^4)\sin(x^3)
+
+    		```undefined
+    		\begin{aligned}\frac d {dx}f(x) &=\frac d {dx} \log(x^4)\sin(x^3)\\&=\log(x^4)\left(\frac d {dx}\sin(x^3)\right)+\sin(x^3)\left(\frac d {dx}\log(x^4)\right)\\&=\frac{4\sin(x^3)}{x}+3x^2\log(x^4)\cos(x^3)\end{aligned}
+    		```
+
+    ## Problem 5.2
+
+    	- Compute the derivative f'(x) of the logistic sigmoid f(x) = \frac 1{1+\exp(-x)}
+
+    	- Let u = 1+\exp(-x) then 
+
+    		```undefined
+    		\begin{aligned}\frac d {dx}\left(\frac1{u}\right) &=\frac d{du}\frac1u\frac{du}{dx}=-\frac1{u^2}\frac{du}{dx}\\&=-\frac{\frac d{dx}(1+\exp(-x))}{(1+\exp(-x))^2} &=\frac{\exp(-x)}{(1+\exp(-x))^2}\end{aligned}
+    		```
+
+    ## Problem 5.3
+
+    	- Compute the derivative f'(x) of the function
+
+    		```undefined
+    		f(x) = \exp(-\frac 1{2\sigma^2}(x-\mu)^2)
+    		```
+
+    	- g'(u(x))\cdot u'(x) 이용, u(x) = -\frac{1}{2\sigma^2}(x-\mu)^2
+
+    		```undefined
+    		\begin{aligned}u'(x) &= \frac{d}{dx}\left(-\frac{1}{2\sigma^2}(x-\mu)^2\right) \\&= -\frac{1}{\sigma^2}(x-\mu) \cdot \frac{d}{dx}(x-\mu) \\&= -\frac{1}{\sigma^2}(x-\mu) \cdot 1 = -\frac{x-\mu}{\sigma^2}\end{aligned}
+    		```
+
+    	- g(u) = \exp(u), g'(u) = \frac{d}{du} \exp(u) = \exp(u)
+
+    		```undefined
+    		\begin{aligned}f'(x) &= g'(u(x)) \cdot u'(x) \\&=-\frac{x-\mu}{\sigma^2} \exp\left(-\frac{1}{2\sigma^2}(x-\mu)^2\right)\end{aligned}
+    		```
+
+    ## Problem 5.5
+
+    	- Consider the following functions
+
+    		```undefined
+    		\begin{aligned}f_1(x)=\sin(x_1)\cos(x_2),&& x\in\R^2\\f_2(x,y)=x^\top y, &&x,y\in\R^n\\f_3(x)=xx^\top,&&x\in \R^n \end{aligned}
+    		```
+
+    		- What are the dimensions of \frac{\partial f_i}{\partial x}
+
+    			- f_1: 1\times 2
+
+    			- f_2: 1\times n
+
+    			- f_3: n \times n
+
+    		- Compute the Jacobians
+
+    			- f_1
+
+    				```undefined
+    				\begin{aligned}\frac{\partial f_1}{\partial x_1} &= \cos(x_1) \cos(x_2) \\\frac{\partial f_1}{\partial x_2} &= -\sin(x_1) \sin(x_2)\\\frac{\partial f_1}{\partial x} &= \begin{bmatrix} \cos(x_1) \cos(x_2) & -\sin(x_1) \sin(x_2) \end{bmatrix}\end{aligned}
+    				```
+
+    			- f_2
+
+    				```undefined
+    				\begin{aligned}\frac{\partial f_2}{\partial x_i} &= \frac{\partial (x^\top y)}{\partial x_i} \\&= \frac{\partial (x_1 y_1 + x_2 y_2 + \ldots + x_n y_n)}{\partial x_i} \\&= y_i\\\frac{\partial f_2}{\partial x} &= \begin{bmatrix} y_1 & y_2 & \ldots & y_n \end{bmatrix}\end{aligned}
+    				```
+
+    			- f_3
+
+    				```undefined
+    				\begin{aligned}\frac{\partial f_{3_{ij}}}{\partial x_k} &= \frac{\partial (x_i x_j)}{\partial x_k} \\&= \begin{cases}x_i & \text{if } k = j \\x_j & \text{if } k = i \\0 & \text{otherwise}\end{cases}\\\frac{\partial f_3}{\partial x} &= \begin{bmatrix}
+    				x_1 & 0 & \ldots & 0 \\
+    				0 & x_2 & \ldots & 0 \\
+    				\vdots & \vdots & \ddots & \vdots \\
+    				0 & 0 & \ldots & x_n
+    				\end{bmatrix}\end{aligned}
+    				```
+
+    ## Problem 5.7
+
+    	- Compute the derivatives \frac{df}{dx} of the following functions by using the chain rule. Provide the dimensions of every single partial derivative. Describe your steps in detail.
+
+    		- f(z) = \log(1+z), z=x^\top x, x\in\R^D
+
+    		- f(z)=\sin(z), z = Ax+b, A\in \R^{E\times D}, x\in\R^d,b\in\R^E where \sin(\cdot) is applied to every element of z
+
+    	- Let u(z) = (1+z), v(z)=\log(z), then
+
+    		```undefined
+    		\frac{du}{dz} = \frac{d(1+z)}{dz} = 1 \\\frac{dv}{dz} = \frac{d\log(z)}{dz} = \frac{1}{z}
+    		```
+
+    		- f(z)=v(u(z))
+
+    			```undefined
+    			\frac{df}{dz} = \frac{dv}{du} \cdot \frac{du}{dz} = \frac{1}{u(z)} \cdot 1 = \frac{1}{1+z}
+    			```
+
+    		- z=x^\top x
+
+    			```undefined
+    			\frac{dz}{dx} = \begin{bmatrix} \frac{dz}{dx_1} \\ \frac{dz}{dx_2} \\ \vdots \\ \frac{dz}{dx_D} \end{bmatrix} = \begin{bmatrix} 2x_1 \\ 2x_2 \\ \vdots \\ 2x_D \end{bmatrix} = 2x
+    			```
+
+    		- \frac{df}{dx}
+
+    			```undefined
+    			\frac{df}{dx} = \frac{df}{dz} \cdot \frac{dz}{dx} = \frac{1}{1+z} \cdot 2x = \frac{2x}{1+z}
+    			```
+
+    	- u(z)=\sin(z), v(z)=z=Ax+b
+
+    		```undefined
+    		\frac{du}{dz} = \cos(z)\\\frac{\partial z_i}{\partial x_j} = A_{ij}
+    		```
+
+    		- f(z)=u(v(z))
+
+    			```undefined
+    			\frac{df}{dx} = \frac{du}{dv} \cdot \frac{dv}{dx} = \cos(z) \cdot \frac{dz}{dx}
+    			```
+
+    		```undefined
+    		\begin{bmatrix}\frac{\partial z_2}{\partial x_1} & \frac{\partial z_2}{\partial x_2} & \dots & \frac{\partial z_2}{\partial x_d} \\
+    		\vdots & \vdots & \ddots & \vdots \\
+    		\frac{\partial z_E}{\partial x_1} & \frac{\partial z_E}{\partial x_2} & \dots & \frac{\partial z_E}{\partial x_d} \end{bmatrix} = \begin{bmatrix} A_{11} & A_{12} & \dots & A_{1d} \\
+    		A_{21} & A_{22} & \dots & A_{2d} \\
+    		\vdots & \vdots & \ddots & \vdots \\
+    		A_{E1} & A_{E2} & \dots & A_{Ed} \end{bmatrix} = A
+    		```
+
+    		Therefore, the derivative \frac{df}{dx} is a matrix of dimensions E \times d, where each element is given by \frac{df_i}{dx_j} = \cos(z_i) \cdot A_{ij}. 
+
+    ## Problem 5.9
+
+    	- We define
+
+    		```undefined
+    		\begin{aligned}g(x,z,\nu)&\coloneqq\log p(x,z)-\log q(z,\nu)\\z&\coloneqq t(\epsilon,\nu)\end{aligned}
+    		```
+
+    		for different functions p,q,t and x\in\R^D,z\in\R^E,\nu\in\R^F,\epsilon\in\R^G. By using the chain rule, compute the gradient \frac d{d\nu}g(x,z,\nu)
+
+    	- \frac{dh}{dx} = \frac{dh}{df} \cdot \frac{df}{dg} \cdot \frac{dg}{dx}를 이용해서 g(x,z,\nu)에 대입하면,
+
+    		```undefined
+    		\frac{d}{d\nu} g(x, z, \nu) = \frac{\partial g}{\partial \nu} + \frac{\partial g}{\partial z} \cdot \frac{\partial z}{\partial \nu}
+    		```
+
+    	- \frac{\partial g}{\partial \nu}
+
+    		```undefined
+    		\frac{\partial g}{\partial \nu} = \frac{\partial}{\partial \nu} \left(\log p(x, z) - \log q(z, \nu)\right) = 0 - \frac{\partial}{\partial \nu} \log q(z, \nu) = -\frac{1}{q(z, \nu)} \frac{\partial q(z, \nu)}{\partial \nu}
+    		```
+
+    	- \frac{\partial g}{\partial z}
+
+    		```undefined
+    		\frac{\partial g}{\partial z} = \frac{\partial}{\partial z} \left(\log p(x, z) - \log q(z, \nu)\right) = \frac{\partial}{\partial z} \log p(x, z) - \frac{\partial}{\partial z} \log q(z, \nu)
+    		```
+
+    	- \frac{\partial z}{\partial \nu}
+
+    		```undefined
+    		\frac{\partial z}{\partial \nu} = \frac{\partial}{\partial \nu} t(\epsilon, \nu)
+    		```
+
+    	- 저 3개의 값들을 다 대입하면,
+
+    		```undefined
+    		\frac{d}{d\nu} g(x, z, \nu) = -\frac{1}{q(z, \nu)} \frac{\partial q(z, \nu)}{\partial \nu} + \left(\frac{\partial}{\partial z} \log p(x, z) - \frac{\partial}{\partial z} \log q(z, \nu)\right) \cdot \frac{\partial}{\partial \nu} t(\epsilon, \nu)
+    		```
+
 # Week 6
+
+    ## Exercise 5.4
+
+    	- Compute the Taylor polynomials T_n, n=0,…,5 of f(x)=\sin(x)+\cos(x) at x_0=0
+
+    	- Taylor polynomial
+
+    		```undefined
+    		T_n(x) := \sum_{k=0}^n\frac{f^{(k)}(x_0)}{k!}(x-x_0)^k
+    		```
+
+    	- n=0
+
+    		```undefined
+    		T_0(x)=f(0)=\sin(0)+\cos(0)=1
+    		```
+
+    	- n=1
+
+    		```undefined
+    		T_1(x)=f(0)+f'(0)x = 1 + (\cos(0)-\sin(0))x = 1+x
+    		```
+
+    	- n=2
+
+    		```undefined
+    		\begin{aligned}T_2(x) &= f(0)+f'(0)x+\frac{f''(0)}2x^2\\&=1+x-\frac{(\sin(0)+\cos(0))}2x^2 \\&= 1+x-\frac{x^2}2\end{aligned}
+    		```
+
+    	- n=3 → 미분하면 반복되는 걸 위에서 발견했음.
+
+    		```undefined
+    		\begin{aligned}T_3(x) &= 1+x-\frac{x^2}2+\frac{f'''(0)}{6}x^3\\&=1+x-\frac{x^2}2-\frac{\cos(0)-\sin(0)}6x^3 \\&= 1+x-\frac{x^2}2-\frac{x^3}6\end{aligned}
+    		```
+
+    	- n=4
+
+    		```undefined
+    		\begin{aligned}T_4(x) &= 1+x-\frac{x^2}2-\frac{x^3}6+\frac{f''''(0)}{24}x^4\\&=1+x-\frac{x^2}2-\frac{x^3}6+\frac{\sin(0)+\cos(0)}{24}x^4\\&=1+x-\frac{x^2}2-\frac{x^3}6+\frac{x^4}{24}\end{aligned}
+    		```
+
+    	- n=5
+
+    		```undefined
+    		\begin{aligned}T_5(x) &= 1+x-\frac{x^2}2-\frac{x^3}6+\frac{x^4}{24}+\frac{f'''''(0)}{120}x^5\\&=1+x-\frac{x^2}2-\frac{x^3}6+\frac{x^4}{24}+\frac{\cos(0)-\sin(0)}{120}x^5\\&=1+x-\frac{x^2}2-\frac{x^3}6+\frac{x^4}{24}+\frac{x^5}{120}\end{aligned}
+    		```
