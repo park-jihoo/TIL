@@ -1174,7 +1174,7 @@ class: Coursework
 
     	- 책에 나오지는 않지만, 알아두면 괜찮을 듯 하여 첨부
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0ac2665f-9ed9-4b4a-ad9b-55000ae2a79c/Screenshot_20230728_083828_Drive.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004241Z&X-Amz-Expires=3600&X-Amz-Signature=2cf21acaeec60f27780c298e34719273f594d3a0a506b40459d66e322369354b&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0ac2665f-9ed9-4b4a-ad9b-55000ae2a79c/Screenshot_20230728_083828_Drive.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231011%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231011T004309Z&X-Amz-Expires=3600&X-Amz-Signature=b206052223b63a6645bebc625aa961a2af95b5a8c339c4f83f9dca9909e58eb7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	### Converges in probability/distribution
 
@@ -1251,7 +1251,7 @@ class: Coursework
 
     	- Example: In rolling dice,
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a03bd44b-965c-46d2-8593-d306fac8cf37/output.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004245Z&X-Amz-Expires=3600&X-Amz-Signature=227bd58f81fd61236ce1b15aed15967085ff87cfae4559d847b208a581194143&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a03bd44b-965c-46d2-8593-d306fac8cf37/output.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231011%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231011T004311Z&X-Amz-Expires=3600&X-Amz-Signature=cfa1f76ba69dd48ff9920f68cdb0db487594a8752615cc75bca24437ee78efd6&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## The Central Limit Theorem
 
@@ -1275,7 +1275,7 @@ class: Coursework
 
     	- Probability statements about \overline X_n can be approximated using a Normal distribution. It’s the probability statements that we are approximating, not the random variable itself
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8dc9dde5-643f-40ce-abe7-736ad261f808/output2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004247Z&X-Amz-Expires=3600&X-Amz-Signature=05bf7f862b4f48d264c9863159bcdf63248b94f6186f208bc91ac0427f3835c3&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8dc9dde5-643f-40ce-abe7-736ad261f808/output2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231011%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231011T004311Z&X-Amz-Expires=3600&X-Amz-Signature=bad72d0050154b051a5371249dac1b00c4976cca4e653e2963d8aab0f3bda90f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	- Theorem: Assume the same conditions with CLT, then
 
@@ -1295,7 +1295,7 @@ class: Coursework
 
     	Let \overline X with \overline X_j = n^{-1}\sum_{i=1}^n X_{ji}. Then \sqrt n (\overline X-\mu)\rightsquigarrow N(0, \Sigma) 
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/726a0a10-f3d6-4669-9852-7fdbb27f430b/multivariate_central_limit_theorem.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004247Z&X-Amz-Expires=3600&X-Amz-Signature=aa91d535ebbfdf02101c7c4a047ae9c195b943ea172682e1da5f2f6077990e06&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/726a0a10-f3d6-4669-9852-7fdbb27f430b/multivariate_central_limit_theorem.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231011%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231011T004311Z&X-Amz-Expires=3600&X-Amz-Signature=db8b771451fb11972f7526a15f7bc30c9e43b7648dc2ec4ab35cd91cc6916297&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Delta Method
 
@@ -1957,4 +1957,4 @@ class: Coursework
 
     		- Convex Graph Example
 
-    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/df3ddadd-6fd6-4b28-8d2a-f400cbd45605/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231010T004320Z&X-Amz-Expires=3600&X-Amz-Signature=a45ac769eb908e5ce1f07cbe0f60541a27fc73ce3437e8373973ee75bcf8f5cb&X-Amz-SignedHeaders=host&x-id=GetObject)
+    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/df3ddadd-6fd6-4b28-8d2a-f400cbd45605/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231011%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231011T004348Z&X-Amz-Expires=3600&X-Amz-Signature=6dbf57c28d33acdb57ef5ff60c095d1a97700a00826c249308a483cd87d8d159&X-Amz-SignedHeaders=host&x-id=GetObject)
