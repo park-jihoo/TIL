@@ -453,7 +453,7 @@ _thumbnail: https://www.notion.so/images/page-cover/met_john_singer_sargent_moro
 
     	- GCN, GAT, and Transformer
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1bce0d94-57f1-481e-9e5f-803352158c2f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231012%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231012T004025Z&X-Amz-Expires=3600&X-Amz-Signature=044cb9f88ebe33d14f8146ec2ca3f57d4886d3135644556609b9dd2ab710b7f1&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1bce0d94-57f1-481e-9e5f-803352158c2f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231013%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231013T004341Z&X-Amz-Expires=3600&X-Amz-Signature=f4f17b3b5e157da85a29a7e75d927ab575f8ed0fea575c671aada1cfdeae96f3&X-Amz-SignedHeaders=host&x-id=GetObject)
 
 # Transformers
 
