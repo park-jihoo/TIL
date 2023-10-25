@@ -8,7 +8,7 @@ subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231024%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231024T004159Z&X-Amz-Expires=3600&X-Amz-Signature=b7e68faf8946b854e6eab9025eae2d9e42b7cbf68b7ef03bcc5c7f6af0a76068&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231025%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231025T004148Z&X-Amz-Expires=3600&X-Amz-Signature=bb223f90ccf7444058572c40ecbc69e2f7932b3c228ae5456108db3b5ffca85c&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 
 ---

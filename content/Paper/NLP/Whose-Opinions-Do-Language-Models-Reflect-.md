@@ -2,7 +2,7 @@
 id: 0cda2b1d-208b-4327-943a-03ae7d6997f3
 title: Whose Opinions Do Language Models Reflect?
 created_time: 2023-10-16T07:27:00.000Z
-last_edited_time: 2023-10-23T13:54:00.000Z
+last_edited_time: 2023-10-24T13:30:00.000Z
 하위 항목: []
 subclass: NLP
 class: Paper
@@ -164,24 +164,86 @@ pdf: https://proceedings.mlr.press/v202/santurkar23a/santurkar23a.pdf
 
 ### The Metric
 
+*   Concretely, we measure steerability as:
+
+    ```undefined
+    \mathcal S_m^G(Q) = \frac{1}{|Q|}\sum_{q\in Q}\max_{c_G\in[\text{QA,BIO,POR}]}\mathcal A(D_m(q;c_G),D_G(q))
+    ```
+
+    where D\_m(q;c\_G) denotes the LM opinion distribution.
+
+*   Higher score indicates that the model is better aligned to the opinions of that group
+
 ### Steering doesn’t solve opinion misalignment
+
+*   Most LMs do become somewhat more representative of subpopulation post steering.
+
+*   However, none of the disparities in group opinion alignment of an LM disappear afterr steering.
 
 ## Consistency
 
+> 💡 Are the views expressed by LMs consistent across the topics?
+
 ### Are LMs consistent?
 
+*   The base model from both providers and RLHF trained text-davinci-003 from OpenAI seem to be most consistent
+
+*   None of the models are perfectly consistent however.
+
 ### The Metric
+
+*   Specifically, for a model, we first identify the group it best aligns across topics as
+
+    ```undefined
+    G_m^\text{best} :=\argmax_{G}\left(\frac 1T \sum_{T'}\mathcal R_M^G(Q_{T'})\right) 
+    ```
+
+*   Then, we define consistency as
+
+    ```undefined
+    \mathcal C_m :=\frac 1T\sum_T \mathbb{I}\left[\left(\argmax_{G}\mathcal R_M^G(Q_T)\right)=G_m^\text{best}\right]
+    ```
+
+*   Our metric \mathcal C\_m is bounnded between 0 and 1, and a higher score implies that the model agrees with the views of same subgroups across all topics.
 
 # Related work
 
 ## Evaluating LM personas
 
+*   By leveraging public opinion surveys, we are able to improve our understanding of LM steerability in three ways
+
+    *   Breadth: Both in the range of different topics and steering groups
+
+    *   Distributional View: Gauging whether LMs can match the spectrum of opinions of a group rather than its modal opinion
+
+    *   Measurability: Using metrics grounded in human response distributions
+
+*   Human feedback trained models often exhibit a left-leaning, pro-environmental stance.
+
 ## Subjectivity in evaluations
+
+*   We approach the problem of evaluating opinions expressed by LMs through the use of surveys
 
 ## Human-LM Alignment
 
+*   Asking who are the humans that we are/should be aligning the models to?
+
 ## Bias, toxicity, and truthfulness
+
+*   Evaluating LMs on inherently subjective questions taken from Pew research
 
 # Conclusions
 
 ## Limitations
+
+### Alignment
+
+*   We view our metrics as useful ways to understand the behavior of LMs, and not necessarily as benchmarks that should be blindly optimized
+
+### ATP and surveys
+
+*   Surveys in general may be sensitive to details such as question specificity, but our conclusions are only valid for the populations to US
+
+### Multiple-choice format
+
+*   We focus on probing LM behaviors using a multiple-choice prompts, which differs from the open-ended text generation setting in which LMs are being increasingly used.
