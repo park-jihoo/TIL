@@ -2,13 +2,13 @@
 id: 3401832b-1c45-4b6e-969e-2a3045678a59
 title: Foster&Rakhlin Chapter 2
 created_time: 2023-10-15T07:25:00.000Z
-last_edited_time: 2023-10-20T04:03:00.000Z
+last_edited_time: 2023-10-25T06:17:00.000Z
 하위 항목: []
 subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231025%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231025T004148Z&X-Amz-Expires=3600&X-Amz-Signature=bb223f90ccf7444058572c40ecbc69e2f7932b3c228ae5456108db3b5ffca85c&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T004111Z&X-Amz-Expires=3600&X-Amz-Signature=2066df80672585ac0ad0935759b699596c95c11579500afff01df3da0b96d773&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 
 ---
@@ -61,7 +61,7 @@ pdf: >-
     \max_{\pi\in\Pi}\sum_{t=1}^Tr^t(\pi)-\sum_{t=1}^Tr^t(\pi^t)
     ```
 
-    which is equivalent to definition
+    which is equivalent to definition up to O(\sqrt T) factors
 
 *   Proof
 
@@ -70,3 +70,29 @@ pdf: >-
         ```undefined
         \mathbb P(\sum_{i=1}^T(X_i-\mathbb E[X_i])\ge t)) \le \exp(-\frac{2t^2}{\sum_{i=1}^T (b_i-a_i)^2})
         ```
+
+# The Need For Exploration
+
+*   First attempt is applying greedy principle
+
+    ```undefined
+    \hat f^t(\pi) =\frac1{n^t(\pi)}\sum_{s<t}r^s\mathbb I\{\pi^s=\pi\}
+    ```
+
+    where n^t(\pi) is the number of times \pi has been selected up to time t
+
+*   Chosen greedy action is,
+
+    ```undefined
+    \pi^t = \argmax_{\pi\in\Pi}\hat f^t(\pi)
+    ```
+
+*   This has linear regret \Omega(T)
+
+    > Example
+
+          \Pi = \{1,2\}, and decision 1 has \frac12 reward almost surely, decision 2 has \text{Ber}(3/4) reward.
+
+          Then, with probability 1/4, the greedy algorithm will get struct on action 1 although action 2’s reward(unseen) is optimal
+
+*   We will consider algorithms that **explore** less visited actions to ensure that
