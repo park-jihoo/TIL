@@ -204,7 +204,7 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- [https://matrixcalc.org/ko/det.html#determinant-Gauss({{2,0,1,2,0},{2,-1,0,1,1},{0,1,2,1,2},{-2,0,2,-1,2},{2,0,0,1,1}})](https://matrixcalc.org/ko/det.html#determinant-Gauss%28%7B%7B2,0,1,2,0%7D,%7B2,-1,0,1,1%7D,%7B0,1,2,1,2%7D,%7B-2,0,2,-1,2%7D,%7B2,0,0,1,1%7D%7D%29) 돌려본 거 첨부
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T004124Z&X-Amz-Expires=3600&X-Amz-Signature=e75963c2e9fdeed8cca82ff31d1df6f906d90fcd09f9e901e4326154a7a79be5&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231027%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231027T004126Z&X-Amz-Expires=3600&X-Amz-Signature=a944604d443b86a6e592df995a9d25b9ede491aee456e35a2a544784d871d6de&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Question 4.3
 

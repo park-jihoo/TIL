@@ -2,14 +2,16 @@
 id: 3401832b-1c45-4b6e-969e-2a3045678a59
 title: Foster&Rakhlin Chapter 2
 created_time: 2023-10-15T07:25:00.000Z
-last_edited_time: 2023-10-25T06:17:00.000Z
+last_edited_time: 2023-10-27T00:36:00.000Z
 하위 항목: []
 subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T004111Z&X-Amz-Expires=3600&X-Amz-Signature=2066df80672585ac0ad0935759b699596c95c11579500afff01df3da0b96d773&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231027%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231027T004119Z&X-Amz-Expires=3600&X-Amz-Signature=18c1190446dee9b3961e17cf5b7f1d63e28ca75b2017cb02419d5bb0d4f41398&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
+_thumbnail: >-
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231027%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231027T004119Z&X-Amz-Expires=3600&X-Amz-Signature=832c1a5b4a6ec4355745b447c2ed5ee247d71fa5851af5b5c3fc4bc05887d694&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -95,4 +97,106 @@ pdf: >-
 
           Then, with probability 1/4, the greedy algorithm will get struct on action 1 although action 2’s reward(unseen) is optimal
 
-*   We will consider algorithms that **explore** less visited actions to ensure that
+*   We will consider algorithms that **explore** less visited actions to ensure that their estimated rewards are not misleading
+
+# The \varepsilon-greedy Algorithm
+
+> 💡 Let \varepsilon\in\[0,1] be the exploration parameter. At each time t\in\[T], the \varepsilon-greedy algorithm computes the estimated reward function \hat f^t. With probability 1-\varepsilon, the algorithm chooses the greedy decision
+
+    ```undefined
+    \hat\pi^t = \argmax_\pi \hat f^t(\pi)
+    ```
+
+     and with probability \varepsilon, it samples a uniform random action \pi^t\sim\text{unif}(\{1,…,A\})
+
+*   \varepsilon-greedy action usually plays the greedy action, which is *exploit*
+
+*   Uniform sampling ensures that the algorithm also *explore* unseen action.
+
+> Proposition 4
+
+    Assume that f^*(\pi)\in[0,1] and r^t is 1-sub-gaussian. Then for any T, by choosing \varepsilon appropriately, the \varepsilon-Greedy algorithm ensures that with probabilty at least 1-\delta,
+
+    ```undefined
+    \mathbb E[\text{Reg}] \lesssim A^{1/3}T^{2/3}\cdot\log ^{1/3}(AT/\delta)
+    ```
+
+*   Proof
+
+> Remark 9 (Explore-then-commit)
+
+    A relative of \varepsilon-Greedy is the explore-then-commit(ETC) algorithm, which uniformly explores actions for first N rounds then estimates rewards based on the data collected and commits to the greedy action for the remaining T-N rounds.
+
+# The Upper Confidence Bound(UCB) Algorithm
+
+*   UCB Algorithm attains a regret bound of the order \widetilde O(\sqrt{AT}), which improves regret bound comparing to \varepsilon-greedy, and is optimal up to logarithmic factors
+
+*   The UCB algorithm is based on the notion of **optimism in the face of uncertainty.**
+
+    *   At each time t, we should adopt the most optimistic perspective of the world possibled given the data collected so far, and then choose the decision \pi^t based on this perspective.
+
+*   For each step t, we can construct **confidence intervals**
+
+    ```undefined
+    \underline f^t \bar f^t : \Pi\to\R
+    ```
+
+*   With probability at least 1-\delta,
+
+    ```undefined
+    \forall t\in[T],\pi\in\Pi,\ f^*(\pi)\in[\underline f^t(\pi), \bar f^t(\pi)]
+    ```
+
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231027%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231027T004119Z\&X-Amz-Expires=3600\&X-Amz-Signature=832c1a5b4a6ec4355745b447c2ed5ee247d71fa5851af5b5c3fc4bc05887d694\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+
+> Lemma 7
+
+    Fix t, and suppose that f^*(\pi)\in[\underline f^t(\pi),\bar f^t(\pi)] for all \pi, Then the optimistic action
+
+    ```undefined
+    \pi^t=\argmax_{\pi\in\Pi}\bar f^t(\pi)
+    ```
+
+    has
+
+    ```undefined
+    f^*(\pi^*)-f^*(\pi^t)\le \bar f^t(\pi^t)-f^*(\pi^t)\le\bar f^t(\pi^t)-\underline f^t(\pi^t)
+    ```
+
+*   Proof
+
+*   This lemma implies that as long as we can build **confidence intervals** for which the width shrinks, the regret for the UCB strategy will be small
+
+*   As long as r^t\in\[0,1], a union bound gives that with probability at least 1-\delta, for all t\in \[T] and \pi\in\Pi,
+
+    ```undefined
+    |\hat f^t(\pi)-f^*(\pi)|\le \sqrt{\frac{2\log(2T^2A/\delta)}{n^t(\pi)}}
+    ```
+
+    where \hat f^t is the sample mean and n^t(\pi):=\sum\_{i\<t}\mathbb I {\pi^i=\pi}
+
+*   For a given round t, one of these two things can happen
+
+    *   The optimistic action has high reward, so the instantaneous regret is small
+
+    *   The instantaneous regret is large(then confidence width is large and n^t(\pi^t) is small). This only happens in small n^t(\pi^t)
+
+> Proposition 5
+
+    Using the confidence bound [\bar f^t(\pi), \underline f^t(\pi)], the UCB algorithm insures that with a probability at least 1-\delta,
+
+    ```undefined
+    \text{Reg}\lesssim \sqrt{AT\log(AT/\delta)}
+    ```
+
+*   This result is optimal up to the \log(AT) factor
+
+*   Proof
+
+> Lemma 8 ( Confidence width potential lemma )
+
+    We have
+
+    ```undefined
+    \sum_{t=1}^T\frac 1{\sqrt{n^t(\pi^t)}}\land 1\lesssim \sqrt{AT}
+    ```
