@@ -2,16 +2,16 @@
 id: 3401832b-1c45-4b6e-969e-2a3045678a59
 title: Foster&Rakhlin Chapter 2
 created_time: 2023-10-15T07:25:00.000Z
-last_edited_time: 2023-10-27T00:36:00.000Z
+last_edited_time: 2023-10-28T17:08:00.000Z
 하위 항목: []
 subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231028T004025Z&X-Amz-Expires=3600&X-Amz-Signature=e621b64a23ab4302c0da30567246a77915b3773f17c4f5e6c921c9d83078bde7&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T004450Z&X-Amz-Expires=3600&X-Amz-Signature=77a1d8f815528b8ac200da2cc26118a15d9903bf720d05d52455a0d12c9a56af&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231028%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231028T004025Z&X-Amz-Expires=3600&X-Amz-Signature=f8d0f10e7a1e3e930cce1f016a33d44bd0c0e400324bf942c45e774d79834894&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T004450Z&X-Amz-Expires=3600&X-Amz-Signature=86780893ef8a63d72e98219f25f54b6b1995542179928d9947644e69558e1966&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -147,7 +147,7 @@ _thumbnail: >-
     \forall t\in[T],\pi\in\Pi,\ f^*(\pi)\in[\underline f^t(\pi), \bar f^t(\pi)]
     ```
 
-![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231028%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231028T004025Z\&X-Amz-Expires=3600\&X-Amz-Signature=f8d0f10e7a1e3e930cce1f016a33d44bd0c0e400324bf942c45e774d79834894\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231029T004450Z\&X-Amz-Expires=3600\&X-Amz-Signature=86780893ef8a63d72e98219f25f54b6b1995542179928d9947644e69558e1966\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 > Lemma 7
 
@@ -200,3 +200,57 @@ _thumbnail: >-
     ```undefined
     \sum_{t=1}^T\frac 1{\sqrt{n^t(\pi^t)}}\land 1\lesssim \sqrt{AT}
     ```
+
+*   Proof
+
+*   The main regret bound now follows from Lemma 8 and Proof of proposition 5
+
+*   The key steps in the proof of proposition 5 were to
+
+    *   Use the optimistic property and validity of the confidence bounds to bound regret by the sum of confidence widths
+
+    *   Use a potential argument to show that the sum of confidence widths is small
+
+> Remark 10 (Instance-dependent regret for UCB)
+
+    - For any algorithm, there exists a model M^* for which the regret must scale as \Omega(\sqrt{AT})
+
+    - Minimax optimality is a useful notion of performance, but may be overly pessimistic.
+
+    - As an alternative, it’s possible to show that the UCB attains what is known as an instance-dependent regret bound, which adapts to the underlying reward function, and can be smaller for “nice” problem instances.
+
+    - Let \Delta(\pi):= f^*(\pi^*)-f^*(\pi) be suboptimality gap for decision \pi. Then, when f^*(\pi)\in[0,1], UCB can be shown to achieve
+
+    	```undefined
+    	\text{Reg}\lesssim \sum_{\pi:\Delta(\pi)>0}\frac{\log(AT/\delta)}{\Delta(\pi)}
+    	```
+
+    - If we keep the underlying model fixed and take T\to\infty, this regret bound scales only **logarithmically** in T
+
+# Bayesian Bandits and the Posterior Sampling Algorithm
+
+*   기존까지의 알고리즘들은 frequentist viewpoint에서 디자인되었기 때문에, worst case choice에 대해서 regret을 minimize하려고 함
+
+*   Alternative is to adopt a ***Bayesian*** viewpoint, and assume that the underlying model is drawn from a known prior \mu\in\Delta(\cal M)
+
+*   Average regret is defined via
+
+    ```undefined
+    \text {Reg}_\text{Bayes}(\mu):=\mathbb E_{M^*\sim \mu}\mathbb E^{M^*}[\text{Reg}]
+    ```
+
+*   We can take advantage of our knowledge of prior to compute the quantities of interest, such as posterior distribution over \pi^\* after observing the dataset \mathcal H^{t-1}
+
+*   The most well-known strategy is posterior sampling
+
+    > 💡 Posterior Sampling
+
+          for t=1,…,T do
+
+          	Set p^t(\pi)=\mathbb P(\pi^*=\pi|\mathcal H^{t-1}), where \mathcal H^{t-1}=(\pi^1,r^1),...,(\pi^{t-1},r^{t-1})
+
+          	Sample \pi^t\sim p^t and observe r^t
+
+*   At each time t, we can use our knowledge of the prior to compute the distribution \mathbb P(\pi^*=\cdot | \mathcal H^{t-1}), which represents the posterior distribution over \pi^* given all the data we have collected from before
+
+*   This simply samples the learner’s action \pi^t from this distribution, by *matching* the posterior distribution of \pi^\*

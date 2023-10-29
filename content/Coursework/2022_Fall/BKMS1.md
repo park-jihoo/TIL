@@ -180,13 +180,6 @@ class: Coursework
 
     - DML Example
 
-    	```sql
-    	INSERT INTO Students VALUES (3, 'Alice', 4.0);
-    	DELETE FROM Courses WHERE Cname = 'CS6320';
-    	UPDATE Courses SET Cid = 7 WHERE Cname = 'CS4320';
-    	SELECT Sname, Gpa FROM Students WHERE Gpa > 3.5;
-    	```
-
 # Storage
 
     - Computer memory hierarchy
