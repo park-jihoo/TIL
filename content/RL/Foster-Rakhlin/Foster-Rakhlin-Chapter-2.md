@@ -2,16 +2,16 @@
 id: 3401832b-1c45-4b6e-969e-2a3045678a59
 title: Foster&Rakhlin Chapter 2
 created_time: 2023-10-15T07:25:00.000Z
-last_edited_time: 2023-10-28T17:08:00.000Z
+last_edited_time: 2023-10-29T13:07:00.000Z
 하위 항목: []
 subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T004450Z&X-Amz-Expires=3600&X-Amz-Signature=77a1d8f815528b8ac200da2cc26118a15d9903bf720d05d52455a0d12c9a56af&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T004227Z&X-Amz-Expires=3600&X-Amz-Signature=b69adb697bd53058232f61f31fd8dafaa6da2ac44f91fb9f19fefeb057ac6206&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231029T004450Z&X-Amz-Expires=3600&X-Amz-Signature=86780893ef8a63d72e98219f25f54b6b1995542179928d9947644e69558e1966&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T004227Z&X-Amz-Expires=3600&X-Amz-Signature=22e3a42ff04f924375d2ac32982bf5ec18a26d49260a5d26c9d770cc64214b8c&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -147,7 +147,7 @@ _thumbnail: >-
     \forall t\in[T],\pi\in\Pi,\ f^*(\pi)\in[\underline f^t(\pi), \bar f^t(\pi)]
     ```
 
-![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231029%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231029T004450Z\&X-Amz-Expires=3600\&X-Amz-Signature=86780893ef8a63d72e98219f25f54b6b1995542179928d9947644e69558e1966\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231030T004227Z\&X-Amz-Expires=3600\&X-Amz-Signature=22e3a42ff04f924375d2ac32982bf5ec18a26d49260a5d26c9d770cc64214b8c\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 > Lemma 7
 
@@ -254,3 +254,39 @@ _thumbnail: >-
 *   At each time t, we can use our knowledge of the prior to compute the distribution \mathbb P(\pi^*=\cdot | \mathcal H^{t-1}), which represents the posterior distribution over \pi^* given all the data we have collected from before
 
 *   This simply samples the learner’s action \pi^t from this distribution, by *matching* the posterior distribution of \pi^\*
+
+> Proposition 6
+
+    For any prior \mu, the posterior sampling algorithm ensure that
+
+    ```undefined
+    \text{Reg}_\text{Bayes}(\mu)\le\sqrt{AT\log(A)}
+    ```
+
+*   Proof
+
+> Lemma 9 (Decoupling)
+
+    We have
+
+    ```undefined
+    \mathbb E_{f^*\sim\mu^t}[f^*(\pi_{f^*})-\bar f^t(\pi_{f^*})]\le\sqrt{A\cdot \mathbb E_{f^*\sim \mu^t}\mathbb E_{\pi^t\sim p^t}[(f^*(\pi^t)-\bar f^t(\pi^t))^2]}
+    ```
+
+*   Proof
+
+> Remark 11 (Equivalence of min-max frequentist regret and max-min Bayesian regret)
+
+    Using the minimax Theorem, it is possible to show that under appropriate technical conditions
+
+    ```undefined
+    \min_{\text{Alg}}\max_{M^*}\mathbb E^{M^*}[\text{Reg}]=\max_{\mu\in\Delta(\mathcal M)}\min_{\text{Alg}}\mathbb E_{M^*\sim\mu}\mathbb E^{M^*}[\text{Reg}]
+    ```
+
+    That is, if we take the worst case value of the Bayesian regret over all possible choices of prior, this coincides with the minimax value of the frequentist regret
+
+*   Proof
+
+# Adversarial Bandits and the Exp3 Algorithm
+
+*
