@@ -2,16 +2,16 @@
 id: 3401832b-1c45-4b6e-969e-2a3045678a59
 title: Foster&Rakhlin Chapter 2
 created_time: 2023-10-15T07:25:00.000Z
-last_edited_time: 2023-10-29T13:07:00.000Z
+last_edited_time: 2023-10-30T06:48:00.000Z
 하위 항목: []
 subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T004227Z&X-Amz-Expires=3600&X-Amz-Signature=b69adb697bd53058232f61f31fd8dafaa6da2ac44f91fb9f19fefeb057ac6206&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T065558Z&X-Amz-Expires=3600&X-Amz-Signature=f2ea91fb48885aa7002a7a0fdb01a233dbb0020749575fa183e21194b27c9823&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T004227Z&X-Amz-Expires=3600&X-Amz-Signature=22e3a42ff04f924375d2ac32982bf5ec18a26d49260a5d26c9d770cc64214b8c&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231030T065559Z&X-Amz-Expires=3600&X-Amz-Signature=79bc6faf67b81a10303ca9f4ff8ce97d37ed41b3d0e928137684b400225db829&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -147,7 +147,7 @@ _thumbnail: >-
     \forall t\in[T],\pi\in\Pi,\ f^*(\pi)\in[\underline f^t(\pi), \bar f^t(\pi)]
     ```
 
-![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231030T004227Z\&X-Amz-Expires=3600\&X-Amz-Signature=22e3a42ff04f924375d2ac32982bf5ec18a26d49260a5d26c9d770cc64214b8c\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231030T065559Z\&X-Amz-Expires=3600\&X-Amz-Signature=79bc6faf67b81a10303ca9f4ff8ce97d37ed41b3d0e928137684b400225db829\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 > Lemma 7
 
@@ -289,4 +289,50 @@ _thumbnail: >-
 
 # Adversarial Bandits and the Exp3 Algorithm
 
-*
+*   This algorithm dispenses with Assumption 1 (Rewards are generated independently via underlying model)
+
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/529eb058-6fe6-4df7-9d4b-e4731b42d41d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231030%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231030T065559Z\&X-Amz-Expires=3600\&X-Amz-Signature=e42dc60d2b5939297d44be76248a2bbd5cee8f2c682e7b353e8734966069e13f\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+
+*   The non-stochastic nature of rewards add new “adversarial data” dimension to the problem.
+
+*   We will present for non-stochastic bandits will leverage the online learning tools.
+
+*   To simplify, suppose that the collection of rewards
+
+    ```undefined
+    \{r^t(\pi)\in[0,1]:\pi\in[A], t\in[T]\}
+    ```
+
+    for each action and time step is arbitrary and fixed ahead of the interaction by an oblivious adversary. We can define regret.
+
+*   As discussed in Remark 7, we can nwrite expected regret as
+
+    ```undefined
+    \text{Reg}=\sum_{t=1}^T\braket{p^t, l^t}-\min_{\pi\in[A]}\sum_{t=1}^T\braket{e_\pi,l^t}
+    ```
+
+    where l^t\in\[0,1]^A is the vector of losses for each of the actions at time t
+
+*   Since only the loss of chosen action \pi^t\sim p^t is observed, we have to build an unbiased estimate of the vector l^t from a single real-valued observation l^t(\pi^t). We can’t directly appeal to exponential weights algorithm.
+
+*   It is straightforward to show that
+
+    ```undefined
+    \widetilde {l^t}(\pi) = \frac{l^t(\pi)}{p^t(\pi)}\times\mathbb I\{\pi^t=\pi\}
+    ```
+
+    is an unbiased estimate for all \pi\in\[A], or in vector notation
+
+    ```undefined
+    \mathbb E_{\pi^t\sim p^t}[\widetilde{l^t}]=l^t
+    ```
+
+*   If we apply exponential weight algorithm using this loss vector \widetilde{l^t},
+
+    ```undefined
+    \begin{aligned}\mathbb E[\text{Reg}]&=\mathbb E\left[\sum_{t=1}^T\braket{p^t,l^t}\right]-\min_\pi\sum_{t=1}^T\braket{e_\pi,l^t}\\&=\mathbb E\left[\sum_{t=1}^T\braket{p^t,\tilde{l^t}}\right]-\mathbb E\left[\sum_{t=1}^T\braket{e_\pi,\tilde{l^t}}\right]\lesssim\sqrt{AT\log A}\end{aligned}
+    ```
+
+*   This algorithm is known as **Exponential Weights for Exploration and Exploitation**, Exp3.
+
+*   Proof(From Exercise)
