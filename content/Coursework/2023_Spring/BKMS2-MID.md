@@ -343,6 +343,58 @@ class: Coursework
 
 # DocumentDB
 
+    ## Row-Oriented Database
+
+    - Tables are stored as rows in disk
+
+    - A single block io read the table fetches multiple rows with their columns
+
+    - More IOs are required to find a particular row in the table
+
+    ## Column-Oriented Database
+
+    - Tables are stored as columns in disk
+
+    - A single block io read the table fetches multiple columns with their rows
+
+    - Less IOs are required to find a particular row in the table
+
+    ## Pros and Cons
+
+    - Row-Based
+
+    	- Optimal for read/write
+
+    	- OLTP
+
+    	- Compression, aggregation is not efficient
+
+    	- Efficient queries with multi-columns
+
+    - Column-Based
+
+    	- Slow Write
+
+    	- OLAP
+
+    	- Compression, aggregation is efficient
+
+    	- Inefficient queries with multi-columns
+
+    ## NoSQL Databases
+
+    - Relational Databases scale vertically, and NoSQL scale horizontally
+
+    - It's schema-less and non-relational
+
+    - Uses for cashing, pub/sub, leaderboards, etc.
+
+    - Tradeoff between schema-less and joins
+
+    - Good for time-series data, historical records, high-write but low-read
+
+    - Graph Databases are used for graphs, knowledge, recommendation, etc.
+
 # StreamDB
 
     ## Data Streams
