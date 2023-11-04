@@ -314,12 +314,6 @@ _thumbnail: https://www.notion.so/images/page-cover/gradients_11.jpg
 
     	- Encoder
 
-    		- Input is sequence of tokens
-
-    		- Contextulixing the word embedding by self attention, calculate {softmax} {(\frac {Q \times K^\top}{\sqrt{d_k}})}V = Z를 multi-head에 대해 한 후 concatenate함
-
-    		- Goes through an additional FC layer. FFN(x) = \max (0, xW_1+b_1)W_2+b_2로 output is still same size contextualized token embedding. 이제 self-attention block이 stack되어버림, 이 때 positional encoding을 추가해 주어 단어의 위치를 파악시킴
-
     	- Decoder
 
     		- Input: given Z = \begin{Bmatrix} z_1, &..., &z_n \end{Bmatrix}, generate auto-regressively

@@ -167,52 +167,6 @@ _thumbnail: https://www.notion.so/images/page-cover/solid_beige.png
 
             Graph
 
-                  ```mermaid
-                  graph TD
-                  b1((15))
-                  b1-->r1((5))
-                  b1-->r2((17))
-                  r1-->r3((3))
-                  r1-->green
-                  r3-->blue
-                  r3-->yellow
-                  r2-->red
-                  r2-->black
-                  style green fill:lightgreen,color:white
-                  style blue fill:skyblue,color:white
-                  style red fill:#f88,color:white
-                  style black fill:black,color:white
-                  style yellow fill:lightyellow
-                  style b1 fill:black,color:white
-                  style r1 fill:red,color:white
-                  style r2 fill:red,color:white
-                  style r3 fill:red,color:white
-                  
-                  ```
-                  
-                  ```mermaid
-                  graph TD
-                  r1((15))
-                  r1-->b1((5))
-                  r1-->b2((17))
-                  b1-->r2((3))
-                  b1-->green
-                  r2-->blue
-                  r2-->yellow
-                  b2-->red
-                  b2-->black
-                  style green fill:lightgreen,color:white
-                  style blue fill:skyblue,color:white
-                  style red fill:#f88,color:white
-                  style black fill:black,color:white
-                  style yellow fill:lightyellow
-                  style b1 fill:black,color:white
-                  style r1 fill:red,color:white
-                  style r2 fill:red,color:white
-                  style b2 fill:black,color:white
-                  
-                  ```
-
         *   Black uncle y and z is a right child: left rotate around the parent
 
             Graph

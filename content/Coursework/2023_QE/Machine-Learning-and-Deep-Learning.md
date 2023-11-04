@@ -190,10 +190,6 @@ class: Coursework
 
     ## Quadratic Discriminant Analysis
 
-    	- With Gaussians but different \Sigma_k in each class, we get quadratic discriminant analysis
-
-    	- \delta_k(x) = -\frac12(x-\mu_k)^\top \Sigma_k^{-1}(x-\mu_k)+\log\pi_k-\frac12\log|\Sigma_k|
-
     ## Naive Bayes
 
     	- Assume features are independent in each class
@@ -706,7 +702,7 @@ class: Coursework
 
     - A perceptron y=f(w_1x_1+w_2x_2)
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231103%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231103T004300Z&X-Amz-Expires=3600&X-Amz-Signature=e640d64d1b8a0a9c1dc7f0824b5357d0ccc02c37f75ae8d0503aeb50233ba54a&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004230Z&X-Amz-Expires=3600&X-Amz-Signature=f09d7920cf427995fdcf063c6871bc79c83a3d54662ed8afe3931098c76aa6fd&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Neural network with a single layer: x \in\R^d,W\in\R^{c\times d},s\in\R^c
 
@@ -1090,7 +1086,7 @@ class: Coursework
 
     ## Transformer
 
-    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231103%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231103T004310Z&X-Amz-Expires=3600&X-Amz-Signature=20070dd1cba1ea86d973eaeacb9f19340f762d9ee761c42d45874b203aade163&X-Amz-SignedHeaders=host&x-id=GetObject)
+    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004242Z&X-Amz-Expires=3600&X-Amz-Signature=40cd344891a157cfc59d958ab6fc975f05ea136377680427bdc7c35a79c6ddbc&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Input Embedding
 
