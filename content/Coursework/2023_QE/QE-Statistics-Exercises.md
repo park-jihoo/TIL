@@ -242,6 +242,21 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Find \mathbb{E}(Y|Z). Hint: What values z can Z take? Noe find \mathbb{E}(Y|Z=z)
 
+    		- Z=1: a<x<1
+
+    			```undefined
+    			\begin{aligned}\mathbb{E}(Y|Z=1) &= \mathbb{P}(0<X<b|a<X<1)\\ &=\frac{\mathbb{P}(a<X<b)}{\mathbb{P}(a<X<1)}\\&=\frac{b-a}{1-a}  \end{aligned}
+    			```
+
+    		- Z=0: 0<x<a<b so Y=0, \mathbb{E}(Y|Z=0) = 0
+
+    		```undefined
+    		\mathbb{E}(Y|Z) = \begin{cases}
+    		0 & \text{if } Z=0 \\
+    		\frac{b-a}{1-a} & \text{if } Z=1
+    		\end{cases}
+    		```
+
     ## Question 3.23
 
     	- Find the moment generating function for the Poisson, Normal, and Gamma distributions
@@ -663,7 +678,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plots
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004219Z&X-Amz-Expires=3600&X-Amz-Signature=082818959ccbff145a4f05867fc3298a0faf6ecc815278c32285d83207bb7734&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004640Z&X-Amz-Expires=3600&X-Amz-Signature=55083783100db781e25df38922943f95a67db36006dcc60582c818e083151caa&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.4
 
@@ -688,6 +703,10 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
     ## Exercise 7.5
 
     	- Let x and y be two distinct points. Find \text{Cov}(\hat F_n(x), \hat F_n(y))
+
+    		```undefined
+    		\text{Cov}(\hat{F}_n(x), \hat{F}_n(y)) = \frac{1}{n-1} \sum_{i=1}^{n} (\hat{F}_n(x)_i - \bar{\hat{F}}_n(x))(\hat{F}_n(y)_i - \bar{\hat{F}}_n(y)).
+    		```
 
     	- \bar{\hat{F}}_n(x) = \frac{1}{n} \sum_{i=1}^{n} \hat{F}_n(x)_i,\bar{\hat{F}}_n(y) = \frac{1}{n} \sum_{i=1}^{n} \hat{F}_n(y)_i. 대입하면
 
@@ -761,7 +780,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004223Z&X-Amz-Expires=3600&X-Amz-Signature=010543601b6f60ad6860847bdf93a130e25d357d24f4720569035af980910550&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004645Z&X-Amz-Expires=3600&X-Amz-Signature=09df8c91443677af9b7dea2ad86e6772c5857adc2ea3c38cb348df2286262dfe&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.8
 
@@ -1131,7 +1150,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     		- 95% confidence interval:  [164.78311377 243.89758345]
 
-    			![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004235Z&X-Amz-Expires=3600&X-Amz-Signature=9a0354551d825be6aac4ca4334f7b7bf3769b1bb609abcc28fa2b6286521ff78&X-Amz-SignedHeaders=host&x-id=GetObject)
+    			![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004655Z&X-Amz-Expires=3600&X-Amz-Signature=194abbc965b53b1780e5b954e0cf9707c0c6661756a4d87cb43766764331497f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 8.7
 
@@ -1188,7 +1207,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Histogram
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004237Z&X-Amz-Expires=3600&X-Amz-Signature=0f4e87744ea30b95012c64165567c8e163f11621eb09458fcc8f2ab41d685d88&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004656Z&X-Amz-Expires=3600&X-Amz-Signature=6cc20601bbb544b4198d9f124e59ccd4b31d76ee2ad568fa1c7647410dbc8a01&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	- Chance of not being selected in any of n draws from n samples with replacement is (1-1/n)^n. Then chance of being selected in any of n draws from n samples with replacemnet is 1-(1-1/n)^n and as n goes to \infty, it become 1-e^{-1}\approx .632
 
@@ -1820,7 +1839,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot for 2~4
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004316Z&X-Amz-Expires=3600&X-Amz-Signature=c5ea62f200366749f6527d07b472daaa4ad24ed2ca71e2b8d621abea3a3231b3&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004721Z&X-Amz-Expires=3600&X-Amz-Signature=d4aea533b6618e157ea186af9e37d7e119e92b06ea3953f6bd1afc7e1304f308&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.3
 
@@ -1986,7 +2005,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231104T004323Z&X-Amz-Expires=3600&X-Amz-Signature=2030d0ba448051e676014e3ef2e8a7231200d5f152756e053510e488e8480767&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004726Z&X-Amz-Expires=3600&X-Amz-Signature=f723fd8d6f232104efbdaff732de4e52d443087bed5ce627203ac9f3d8f66265&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.6
 
