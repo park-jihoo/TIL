@@ -678,7 +678,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plots
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004640Z&X-Amz-Expires=3600&X-Amz-Signature=55083783100db781e25df38922943f95a67db36006dcc60582c818e083151caa&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004408Z&X-Amz-Expires=3600&X-Amz-Signature=a17b3804f86b7c5d9d75e1cd9c9c1b97f4c1dd63eb02907c0c89a39da2be7dd7&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.4
 
@@ -780,7 +780,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004645Z&X-Amz-Expires=3600&X-Amz-Signature=09df8c91443677af9b7dea2ad86e6772c5857adc2ea3c38cb348df2286262dfe&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004412Z&X-Amz-Expires=3600&X-Amz-Signature=f84776a790e786213adc30b44a1d939bd0d51c1d2000a3f59f1a3feeb5945ead&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.8
 
@@ -1150,7 +1150,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     		- 95% confidence interval:  [164.78311377 243.89758345]
 
-    			![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004655Z&X-Amz-Expires=3600&X-Amz-Signature=194abbc965b53b1780e5b954e0cf9707c0c6661756a4d87cb43766764331497f&X-Amz-SignedHeaders=host&x-id=GetObject)
+    			![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004419Z&X-Amz-Expires=3600&X-Amz-Signature=1dbe2bc07029ef9abc863e4ea0891843686267871649ac7677932afb2aa77b6c&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 8.7
 
@@ -1207,7 +1207,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Histogram
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004656Z&X-Amz-Expires=3600&X-Amz-Signature=6cc20601bbb544b4198d9f124e59ccd4b31d76ee2ad568fa1c7647410dbc8a01&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004420Z&X-Amz-Expires=3600&X-Amz-Signature=067836644cd722e965de214541af234bc40fd3e98fd4e27a285392d574c73f37&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	- Chance of not being selected in any of n draws from n samples with replacement is (1-1/n)^n. Then chance of being selected in any of n draws from n samples with replacemnet is 1-(1-1/n)^n and as n goes to \infty, it become 1-e^{-1}\approx .632
 
@@ -1839,7 +1839,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot for 2~4
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004721Z&X-Amz-Expires=3600&X-Amz-Signature=d4aea533b6618e157ea186af9e37d7e119e92b06ea3953f6bd1afc7e1304f308&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004445Z&X-Amz-Expires=3600&X-Amz-Signature=3ed4a29d2146b71632490e7a7806328186cf195d8fc50b410f9b8d179c571adc&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.3
 
@@ -2005,7 +2005,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231105%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231105T004726Z&X-Amz-Expires=3600&X-Amz-Signature=f723fd8d6f232104efbdaff732de4e52d443087bed5ce627203ac9f3d8f66265&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231106%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231106T004454Z&X-Amz-Expires=3600&X-Amz-Signature=cc09e74b3998aa861dfdd944e643d0cc1b3400e46e5fe4a627e181295df31f7f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.6
 
