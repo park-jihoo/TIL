@@ -706,7 +706,7 @@ class: Coursework
 
     - A perceptron y=f(w_1x_1+w_2x_2)
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231110%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231110T004328Z&X-Amz-Expires=3600&X-Amz-Signature=be08782b789a67201adaf48527cbc889eb35666f03e88279cd51e00b73198a2d&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231111T004246Z&X-Amz-Expires=3600&X-Amz-Signature=b920f40cea7e8d7ba0d8ac1dbbd97a0df2b4a6b94de871219fbf29692c68fb2f&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Neural network with a single layer: x \in\R^d,W\in\R^{c\times d},s\in\R^c
 
@@ -1090,7 +1090,7 @@ class: Coursework
 
     ## Transformer
 
-    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231110%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231110T004338Z&X-Amz-Expires=3600&X-Amz-Signature=6b9aadfb693ae030a00e05a186e3dd74cf9a6cf6bae64f9ff5838b4b9a4aae5e&X-Amz-SignedHeaders=host&x-id=GetObject)
+    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231111%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231111T004252Z&X-Amz-Expires=3600&X-Amz-Signature=6499839189357100db6f0032cc3faebc5fe94a5e57d3dbbc1d12c78a8d528199&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Input Embedding
 
