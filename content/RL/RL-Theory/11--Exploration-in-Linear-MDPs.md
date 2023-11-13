@@ -58,7 +58,7 @@ _thumbnail: https://www.notion.so/images/page-cover/webb3.jpg
 
 *   Generalize tabular MDP: \phi(s,a) is one-hot vector, and P(\cdot|s,a) = P\_\phi(s,a) where P \in \R^{|S|\times|SA|} is the transition matrix
 
-![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/73c05bfe-8868-449c-bc3e-1445af5a630f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231112%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231112T004632Z\&X-Amz-Expires=3600\&X-Amz-Signature=0c15522e0a739113357b58296b4a7f7fd5ca3c380c83c205685ea52e5c45b19a\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/73c05bfe-8868-449c-bc3e-1445af5a630f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231113%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231113T004415Z\&X-Amz-Expires=3600\&X-Amz-Signature=36d6dad176b74da001dff3aa0abacb7eae65f4a79400a2feefc34caaf727ef82\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ### Low-Rank
 
@@ -129,10 +129,6 @@ Lemma(covering of \Theta)
 Lemma(uniform convergence)
 
 *   With probability at least 1-\delta, and for all s,a,h,n and all f \in \mathscr{F}:
-
-    ```undefined
-    \left|\left(\hat P(\cdot|s,a) - P(\cdot|s,a)\right) \cdot f\right| = \widetilde{O}(Hd)\cdot \|\phi(s,a)\|_{(\Lambda_h^n)^{-1}}
-    ```
 
 ### UCBVI in Linear MDPs
 
