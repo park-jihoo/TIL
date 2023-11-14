@@ -706,7 +706,7 @@ class: Coursework
 
     - A perceptron y=f(w_1x_1+w_2x_2)
 
-    	![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231113T004455Z&X-Amz-Expires=3600&X-Amz-Signature=301c9ae487d3ae8bacba4e91669855b0d65e3b47340ec6724db6761f58f0d667&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231114T004432Z&X-Amz-Expires=3600&X-Amz-Signature=09d4fd4eaa728cde7eb53ffca823ab191a2ea42cc71e899ba1c0db4276170f4b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Neural network with a single layer: x \in\R^d,W\in\R^{c\times d},s\in\R^c
 
@@ -1090,7 +1090,7 @@ class: Coursework
 
     ## Transformer
 
-    ![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231113%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231113T004535Z&X-Amz-Expires=3600&X-Amz-Signature=8966c7b9af86ae4ba0d3583d86203ddeb1cb6c7f74864e13dd3a6f955c5c4642&X-Amz-SignedHeaders=host&x-id=GetObject)
+    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231114%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231114T004450Z&X-Amz-Expires=3600&X-Amz-Signature=d73f948d6fc7601ac7e141fec937a16dd341b34567f410be5440f13ab2268061&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Input Embedding
 
