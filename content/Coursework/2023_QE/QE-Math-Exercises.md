@@ -26,6 +26,12 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- Solution
 
+    		- Symmetric: \langle y,x\rangle = y_1x_1-(y_1x_2+x_1y_2)+2(y_2x_2) = \langle x,y\rangle
+
+    		- Positive Definite: \langle x,x\rangle = x_1^2 - 2x_1x_2 + 2x_2^2 = (x_1-x_2)^2+x_2^2 \ge0
+
+    		- Linear: \langle x, ay \rangle = ay_1x_1 - ay_1x_2 - ax_1y_2 + 2ay_1x_2 = a \langle x,y \rangle
+
     ## Question 3.2
 
     	- Consider \R^2 with \langle \cdot,\cdot\rangle defined for all x and y  in \R^2 as
@@ -198,7 +204,7 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- [https://matrixcalc.org/ko/det.html#determinant-Gauss({{2,0,1,2,0},{2,-1,0,1,1},{0,1,2,1,2},{-2,0,2,-1,2},{2,0,0,1,1}})](https://matrixcalc.org/ko/det.html#determinant-Gauss%28%7B%7B2,0,1,2,0%7D,%7B2,-1,0,1,1%7D,%7B0,1,2,1,2%7D,%7B-2,0,2,-1,2%7D,%7B2,0,0,1,1%7D%7D%29) 돌려본 거 첨부
 
-    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231122%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231122T004810Z&X-Amz-Expires=3600&X-Amz-Signature=e2c5c03b3607d87494e9a4631f9c13bdd92df548d7986295b67e79ea3af4f570&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231123T004414Z&X-Amz-Expires=3600&X-Amz-Signature=8548ac0ece8e2316c5caa591ed4427f0e53aa1bf1e55030501bb9660c6518cc9&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Question 4.3
 
