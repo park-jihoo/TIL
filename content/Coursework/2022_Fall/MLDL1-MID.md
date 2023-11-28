@@ -268,6 +268,12 @@ class: Coursework
 
     ## Types of errors
 
+    	- False positive rate: The fraction of negative examples that are classified as positive
+
+    	- False negative rate: The fraction of positive examples that are classified as negative
+
+    	- In order to reduce the false negative rate, we may want to reduce threshold but it may increase the overall error rate
+
     ## Quadratic Discriminant Analysis
 
     	- With Gaussians but different \Sigma_k in each class, we get quadratic discriminant analysis
