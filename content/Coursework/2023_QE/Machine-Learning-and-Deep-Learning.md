@@ -706,7 +706,7 @@ class: Coursework
 
     - A perceptron y=f(w_1x_1+w_2x_2)
 
-    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231206%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231206T004617Z&X-Amz-Expires=3600&X-Amz-Signature=8fb778146ef9b0d7128f89221b5fa2a51bd9ab89812b1df5671d8b497dd65ed1&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/03999249-4602-4130-bff6-69bf9b7b07d3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231207%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231207T004541Z&X-Amz-Expires=3600&X-Amz-Signature=9159a32f4b99e075e3be11f5bc821ab70560222677dd223ff653047a5fa27aaf&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Neural network with a single layer: x \in\R^d,W\in\R^{c\times d},s\in\R^c
 
@@ -1090,7 +1090,7 @@ class: Coursework
 
     ## Transformer
 
-    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231206%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231206T004629Z&X-Amz-Expires=3600&X-Amz-Signature=f1e4abca36ec8718104edc3e726e6d456c7d1b68c1437760147ebc909ee98ba1&X-Amz-SignedHeaders=host&x-id=GetObject)
+    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a2ef8825-114b-465a-8355-6b2ba82488fb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231207%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231207T004550Z&X-Amz-Expires=3600&X-Amz-Signature=c8920ccdabf91829870356b1d8fb1616c1216ca03b9b5a5ac59ed5c228f7eea6&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - Input Embedding
 
