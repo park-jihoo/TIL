@@ -394,6 +394,18 @@ class: Coursework
 
     - Which among the following is/are some of the assumptions made by the k-means algorithms(assuming euclidean distance measure)?
 
+    	- Clusters are spherical in shape
+
+    	- Clusters are of similar sizes
+
+    	- Data points in one cluster are well separated from data points of other clusters
+
+    	- There is no wide variation in density among the data points
+
+    	Answer
+
+    		(a) and (b)
+
     - Which of the following is more appropriate to do feature selection?
 
     	- Ridge
