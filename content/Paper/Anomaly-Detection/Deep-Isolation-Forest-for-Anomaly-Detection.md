@@ -10,7 +10,7 @@ class: Paper
 pdf: https://arxiv.org/pdf/2206.06602.pdf
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a1f92f77-f6dd-4dec-9c54-592da138bb34/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231221T004353Z&X-Amz-Expires=3600&X-Amz-Signature=8afbe327453b1e14a478447d49419976075ffb1a64176927487726833f4edb9c&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a1f92f77-f6dd-4dec-9c54-592da138bb34/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231222T004344Z&X-Amz-Expires=3600&X-Amz-Signature=ecd1f761c3090519265d37cc20c9134edb16665335fb8d214e99290398167ee8&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -149,11 +149,11 @@ where r is the ensemble size, \phi\_u:\mathcal D\to\R^d is the network that maps
 
 *   Algorithm 1 presents the procedure of the construction of deep isolation trees
 
-    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a1f92f77-f6dd-4dec-9c54-592da138bb34/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004353Z\&X-Amz-Expires=3600\&X-Amz-Signature=8afbe327453b1e14a478447d49419976075ffb1a64176927487726833f4edb9c\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a1f92f77-f6dd-4dec-9c54-592da138bb34/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004344Z\&X-Amz-Expires=3600\&X-Amz-Signature=ecd1f761c3090519265d37cc20c9134edb16665335fb8d214e99290398167ee8\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 *   Algorithm 2 is about anomaly scoring procedure
 
-    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/2a3aa3e8-6a78-4503-8752-fa92bff625d0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004354Z\&X-Amz-Expires=3600\&X-Amz-Signature=665233abcdeb3cebf09f5a639dbaa71afc7ede441123576a3a41458058a19e2b\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/2a3aa3e8-6a78-4503-8752-fa92bff625d0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004345Z\&X-Amz-Expires=3600\&X-Amz-Signature=0b037a4bbf104b343de9aa2e62799967069195058a8922f6bedffbcbb476b50e\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ## Theoretical Analysis
 
@@ -233,19 +233,19 @@ where r is the ensemble size, \phi\_u:\mathcal D\to\R^d is the network that maps
 
 ### Tabluar Data
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/5f64a9e8-3dc0-481b-b415-1c43f3241c0c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=443c2c7b6ef0fa5981a1cdeabf3c320ab88790c9ecde15f26d723332cd4248d6\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/5f64a9e8-3dc0-481b-b415-1c43f3241c0c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=4be658026502613e1c22a422cd09cc3651654e7d7687c5e3303ab621dd60b224\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ### Graph Data and Time Series
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8b05b4a0-0641-4ad6-b467-796ce86eb9aa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=30247e8325c785ae6113698f002add13aaafdb21a259265ae8ba25a28cc11d8f\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8b05b4a0-0641-4ad6-b467-796ce86eb9aa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=6e64cf6cadb856f394468d7a00f2103674cbdc3996466f44582f96adc24704cd\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ## Scalability to High-dimensional, Large-scale Data
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a22a0b6d-9ef6-44b5-9238-640c8588c6f9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=5a3cfaf6f3bc5bd32dc1f880fa1ad9eb91df2750bbcf8ffd2bc1499d82baafca\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a22a0b6d-9ef6-44b5-9238-640c8588c6f9/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=e8301c7227cdff04aaf19e3e7f6cfda3b7e01c2d85e50dd8db138233cdb8c87a\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ## Robustness w\.r.t Anomaly Contamination
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c7293ce1-d752-47b3-9ff7-14aa62e38528/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=bc65b8693cc86a4147f70736f1289ce7f63c74b6449a37fd350d9fcf610452b1\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c7293ce1-d752-47b3-9ff7-14aa62e38528/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=776194b6218de48459365e21cf1a4f9c8c55ff3526d2a83f58dbd931569d6985\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 *   Generally, the performance of all the anomaly detectors downgrades with the increasing contamination ratio.
 
@@ -255,7 +255,7 @@ where r is the ensemble size, \phi\_u:\mathcal D\to\R^d is the network that maps
 
 ### Representation Scheme
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ee69e784-dfed-47aa-b170-c30f638da57a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=67e7338c142e445e1f698903b8ba076516c0f6f93b2d1502822de5ead1276b16\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ee69e784-dfed-47aa-b170-c30f638da57a/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=610466fd44d48f78a6e205cc153b6a3506f64e613039f01e6a37f8825f2eafc1\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 *   Our representation scheme achieves desired diversity and randomness, while simultaneously maintaining stable expressiveness in each representation, enabling excellent synergy with the downstream isolation-based anomaly scoring mechanism
 
@@ -273,7 +273,7 @@ where r is the ensemble size, \phi\_u:\mathcal D\to\R^d is the network that maps
 
 ## Ablation Study in CERE and DEAS
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a9d5a398-7cb7-47b1-b131-e02f6b11ea7e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=c45eaf4d8843399f2c5555e91a6657dc66745d10be83be480964b300fd4af8de\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a9d5a398-7cb7-47b1-b131-e02f6b11ea7e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=39f3ab55afd047b5180d403c8eef740a924b6df00c799ac75ed7c134f5ad4dd6\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 # Conclusions
 

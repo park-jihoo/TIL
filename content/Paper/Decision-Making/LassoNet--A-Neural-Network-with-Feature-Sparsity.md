@@ -10,7 +10,7 @@ class: Paper
 pdf: https://arxiv.org/pdf/1907.12207.pdf
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c08d75eb-1723-4523-b630-4165a0571849/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231221T004349Z&X-Amz-Expires=3600&X-Amz-Signature=6be8b8763a380e4ef85b1fdb41db237b9cbad4e4b8493273d81b2dd24e71f964&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c08d75eb-1723-4523-b630-4165a0571849/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231222T004341Z&X-Amz-Expires=3600&X-Amz-Signature=314ddf8806d789b8e140199a900ab37fc1d2c13482d79c32ce114f236217b0e8&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -118,7 +118,7 @@ _thumbnail: >-
 
 *   The hierarchy coefficient M, controls the relative strength of the linear and nonlinear components
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c08d75eb-1723-4523-b630-4165a0571849/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=6be8b8763a380e4ef85b1fdb41db237b9cbad4e4b8493273d81b2dd24e71f964\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/c08d75eb-1723-4523-b630-4165a0571849/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=314ddf8806d789b8e140199a900ab37fc1d2c13482d79c32ce114f236217b0e8\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 # Optimization
 
@@ -134,7 +134,7 @@ _thumbnail: >-
     \begin{aligned}\text{minimize}_{b\in\R,W\in\R^k}&&\frac 12(v-b)^2+\frac 12\|u-W\|^2_2+\lambda|b|\\\text{subject to}&& \|W\|_\infty\le M|b|\end{aligned}
     ```
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/1597b596-d420-42c6-a83a-633202774eb0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=1e1368e22674101b1d2f3cb2be37132bc79638f9582709618baf1b689bb17eb1\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/1597b596-d420-42c6-a83a-633202774eb0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=0f40df96e467451b966180baa2d92f3f53869d3bbf6470a4524f2dbf796ff4ff\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ## Computational Complexity
 
@@ -160,7 +160,7 @@ _thumbnail: >-
 
 ## Results
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/7922b0df-8bc6-44c3-8397-9cffb4ec004c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=ad0ebada13f7f223a20624760b971c47532d733fe82be51f1717409cde45661b\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/7922b0df-8bc6-44c3-8397-9cffb4ec004c/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=b8668385ab7f0a311bf462be742f53d5ec78115010d0ad39e7163e83fb71830f\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 # Extension to Unsupervised Feature Selection
 
@@ -172,11 +172,11 @@ _thumbnail: >-
 
 *   We consider the reconstruction loss L(\theta, W)=\left|f\_{\theta,W}(X)-X\right|^2\_F, where |\cdot|\_F denotes the Frobenius matrix norm
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ed7fd0bc-5b40-4c40-8d01-07293e99e353/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=9e6ff5bf11f65ff576eb6482e1751fcd2d38a1b2d2c13fa990934aca054ac521\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ed7fd0bc-5b40-4c40-8d01-07293e99e353/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004342Z\&X-Amz-Expires=3600\&X-Amz-Signature=8556fef4b35a6829e21731461d9bb78b292b58fc08cb5bf3a8e267f020f9c1c4\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ## Selected Digits for Single Classes in MNIST
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/5a911a15-325c-42c9-8bca-ec42c9296c4e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=8f24dbdba212dfafe1a3c581bd8805b56eb5069ca8b19e7764cd59f122f275b0\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/5a911a15-325c-42c9-8bca-ec42c9296c4e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004342Z\&X-Amz-Expires=3600\&X-Amz-Signature=2c5ac5d983cce1591e9fe81e0640bab0cf7abbefa205c5574f5fed60e5cfecce\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 # Extension to Matrix Completion
 
@@ -186,4 +186,4 @@ _thumbnail: >-
 
 *   Once the dense model has been trained, the method performs feature selection using the GROUP-HIER-PROX operator
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8049d151-4542-47d5-907c-86f6b10e65bb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231221%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231221T004349Z\&X-Amz-Expires=3600\&X-Amz-Signature=96bc517ab95d8e901c650f31a240474ccdc2afc824e8f784a30d3a3863facf0f\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8049d151-4542-47d5-907c-86f6b10e65bb/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231222%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20231222T004341Z\&X-Amz-Expires=3600\&X-Amz-Signature=edb57268955dfe8bf82cbcf95bb92304da45030062d0c28e7e5aaaca4b0c401a\&X-Amz-SignedHeaders=host\&x-id=GetObject)
