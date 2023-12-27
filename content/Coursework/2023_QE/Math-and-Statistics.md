@@ -1174,7 +1174,7 @@ class: Coursework
 
     	- 책에 나오지는 않지만, 알아두면 괜찮을 듯 하여 첨부
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/0ac2665f-9ed9-4b4a-ad9b-55000ae2a79c/Screenshot_20230728_083828_Drive.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004332Z&X-Amz-Expires=3600&X-Amz-Signature=88eeb992daa0e20792d0f5acf20a6c878eec45d5cb40fabe6c71c3feffc85fc0&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/0ac2665f-9ed9-4b4a-ad9b-55000ae2a79c/Screenshot_20230728_083828_Drive.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004354Z&X-Amz-Expires=3600&X-Amz-Signature=51a17815fe4028263d00c2d9932293ca58ab66064461d218204b9efbe0f8e8b8&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	### Converges in probability/distribution
 
@@ -1251,7 +1251,7 @@ class: Coursework
 
     	- Example: In rolling dice,
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a03bd44b-965c-46d2-8593-d306fac8cf37/output.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004334Z&X-Amz-Expires=3600&X-Amz-Signature=f010823a187ad273d6e1d346f21af3f89d3358c28796c56dfa0e091063c144c4&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/a03bd44b-965c-46d2-8593-d306fac8cf37/output.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004356Z&X-Amz-Expires=3600&X-Amz-Signature=8298ec065578f754fb7b492f075cffca9dd511b395cd1b0354c1c183b89b7851&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## The Central Limit Theorem
 
@@ -1275,7 +1275,7 @@ class: Coursework
 
     	- Probability statements about \overline X_n can be approximated using a Normal distribution. It’s the probability statements that we are approximating, not the random variable itself
 
-    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8dc9dde5-643f-40ce-abe7-736ad261f808/output2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004334Z&X-Amz-Expires=3600&X-Amz-Signature=5e1037356de4d75b2981cab45bf6c4c4b255347a6d9df0b4775d195da3f5f464&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/8dc9dde5-643f-40ce-abe7-736ad261f808/output2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004356Z&X-Amz-Expires=3600&X-Amz-Signature=b25b0f0918eb9b9638825d02d93aac9a1d08beb411fa98374fb37d46d7d9c769&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	- Theorem: Assume the same conditions with CLT, then
 
@@ -1295,7 +1295,7 @@ class: Coursework
 
     	Let \overline X with \overline X_j = n^{-1}\sum_{i=1}^n X_{ji}. Then \sqrt n (\overline X-\mu)\rightsquigarrow N(0, \Sigma) 
 
-    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/726a0a10-f3d6-4669-9852-7fdbb27f430b/multivariate_central_limit_theorem.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004334Z&X-Amz-Expires=3600&X-Amz-Signature=b8937bda01302e55061f18979013d67c64cbb954b636a0e258f687cb397a2309&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/726a0a10-f3d6-4669-9852-7fdbb27f430b/multivariate_central_limit_theorem.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004356Z&X-Amz-Expires=3600&X-Amz-Signature=9f5d7e6f8affd3e406e4213c9ce0cfca7f9c730becbe9b9b6c56548358f104e8&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Delta Method
 
@@ -1957,4 +1957,4 @@ class: Coursework
 
     		- Convex Graph Example
 
-    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/df3ddadd-6fd6-4b28-8d2a-f400cbd45605/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004410Z&X-Amz-Expires=3600&X-Amz-Signature=ac28796b4e0c7bc1983501b2e10f81b717f0a04e3e9d92a23feef8bbe6516319&X-Amz-SignedHeaders=host&x-id=GetObject)
+    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/df3ddadd-6fd6-4b28-8d2a-f400cbd45605/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004439Z&X-Amz-Expires=3600&X-Amz-Signature=a14da14a99f2568662eca43f53be2cf4b971bffad85eea23aef79ee005a12e04&X-Amz-SignedHeaders=host&x-id=GetObject)

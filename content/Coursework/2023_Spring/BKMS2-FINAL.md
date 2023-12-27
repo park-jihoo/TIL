@@ -209,7 +209,7 @@ _thumbnail: https://www.notion.so/images/page-cover/rijksmuseum_vermeer_the_milk
 
     - Probability that c1 and c2 are candidate pair is 1 - (1-s^r)^b
 
-    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/39e0b223-1835-42aa-b402-55c900b7fe90/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231226%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231226T004250Z&X-Amz-Expires=3600&X-Amz-Signature=0ca0ee745cc53fd8a35a3cfac5f2bf2c4cb0924b7c1522262334a2efc7301622&X-Amz-SignedHeaders=host&x-id=GetObject)
+    ![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/39e0b223-1835-42aa-b402-55c900b7fe90/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20231227%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231227T004301Z&X-Amz-Expires=3600&X-Amz-Signature=a8b9e0389255e6bfd39b531b6cbce5fd6d2c257db1be38108710802ecffd231c&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     - b가 고정되어 있을 때, r이 커질수록 false negative 증가, false positive 감소
 
