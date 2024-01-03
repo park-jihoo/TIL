@@ -156,6 +156,8 @@ class: Coursework
 
     	Answer
 
+    		(b)
+
     - In building a linear regression model for a particular data set, you observe the coefficient of one of the features having a relatively high negative value. This suggests that
 
     	- This feature has a strong effect on the model (should be retained)
