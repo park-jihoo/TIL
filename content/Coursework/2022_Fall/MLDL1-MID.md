@@ -496,18 +496,6 @@ class: Coursework
 
     ## Choosing the best tree
 
-    	### Pruning
-
-    	- A small tree with fewer splits might lead to lower variance, and larger tree an lead to overfit
-
-    	- Cost complexity pruning → introduce tuning parameter \alpha
-
-    		```undefined
-    		\sum_{m=1}^{|T|}\sum_{x_i\in R_m}(y_i-\hat y_{R_m})^2 + \alpha|T|
-    		```
-
-    	- Similar to LASSO, and select an optimal value \hat\alpha with cross-validation
-
     ## Classification trees
 
     	- For a classification tree, we predict that each observation belongs to the most commonly occuring class of training observations in the region to which it belongs
