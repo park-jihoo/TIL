@@ -2,7 +2,7 @@
 id: e6921ebb-b53b-4d1d-918d-36322a492bae
 title: BKMS2 MID
 created_time: 2023-08-01T03:38:00.000Z
-last_edited_time: 2023-10-07T08:35:00.000Z
+last_edited_time: 2024-01-18T04:41:00.000Z
 icon_emoji: 📖
 하위 항목: []
 subclass: 2023_Spring
