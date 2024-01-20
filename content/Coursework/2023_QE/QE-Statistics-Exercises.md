@@ -678,7 +678,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plots
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004643Z&X-Amz-Expires=3600&X-Amz-Signature=ebfd3f5c8303e3ce88301a8e972e6e13261cf36ff1e0ee29034094c52c02d49e&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/325b51ce-0dd0-449b-9b2e-aa5260bbc869/normal_cauchy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004534Z&X-Amz-Expires=3600&X-Amz-Signature=54e7438fabd2eb50ec2ce5a4cccbc20f1dad0d431a9438103575d58fb70b441c&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.4
 
@@ -780,7 +780,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004646Z&X-Amz-Expires=3600&X-Amz-Signature=3e66d69d4f96f06680fb7f57313d43ea3c31b10d11ba26700959c1d21827ce38&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/09097402-9adf-4c5b-bc97-29be8eff8976/fiji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004536Z&X-Amz-Expires=3600&X-Amz-Signature=bea24b49eb90efa0e3300878ae6524295bd38b6e7c86ae3beda4bdd7e8d682e8&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Exercise 7.8
 
@@ -1150,7 +1150,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     		- 95% confidence interval:  [164.78311377 243.89758345]
 
-    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004655Z&X-Amz-Expires=3600&X-Amz-Signature=7bcccee254329fd43a487c241cca47c51bc9c93f6d644ea5de05f3f68d276ee1&X-Amz-SignedHeaders=host&x-id=GetObject)
+    			![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/ba312f41-dbff-4635-8df9-45b644fe7c06/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004543Z&X-Amz-Expires=3600&X-Amz-Signature=20e31d882f8637c8b416d6d70e2a939ff26d29ec34498aea45c8e24b6aa27d3b&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 8.7
 
@@ -1207,7 +1207,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Histogram
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004658Z&X-Amz-Expires=3600&X-Amz-Signature=907515449483abe9a956695b1e010cd7474f56f1be3b60fb9e0b96e3725fa0c5&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/f7d5b3ec-f4a9-4771-a03b-60cef8e47b65/histogram.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004545Z&X-Amz-Expires=3600&X-Amz-Signature=8df004a2358056d25614e8e3c230c902aa1d28a2ddb31accee9494c408e9e8cb&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     	- Chance of not being selected in any of n draws from n samples with replacement is (1-1/n)^n. Then chance of being selected in any of n draws from n samples with replacemnet is 1-(1-1/n)^n and as n goes to \infty, it become 1-e^{-1}\approx .632
 
@@ -1839,7 +1839,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot for 2~4
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004719Z&X-Amz-Expires=3600&X-Amz-Signature=5d8b9ad0b75cb2130244783d088446b799c3db640910e02bb8320ecffa026716&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/46929168-bd3b-4191-9bbb-c5616feb2317/11.2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004614Z&X-Amz-Expires=3600&X-Amz-Signature=374ae24ac272eed5b3c80d1259f8e3ef1c6ab4d8e41db921acf50b2219188fe0&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.3
 
@@ -2005,7 +2005,7 @@ pdf: https://egrcc.github.io/docs/math/all-of-statistics.pdf
 
     	- Plot
 
-    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240119%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240119T004728Z&X-Amz-Expires=3600&X-Amz-Signature=7dd07fcc69110e6ca521e755d5379c4bc1bfafd33346f218fe4e03abf2d1315c&X-Amz-SignedHeaders=host&x-id=GetObject)
+    		![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/01820b1e-bd77-4b41-82b7-be850f03fc38/11.5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240120T004617Z&X-Amz-Expires=3600&X-Amz-Signature=b4f3d0d50f0e3b954bb6c571b8051d070851cd26f8679b853819c1a77dc04584&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## 11.6
 
