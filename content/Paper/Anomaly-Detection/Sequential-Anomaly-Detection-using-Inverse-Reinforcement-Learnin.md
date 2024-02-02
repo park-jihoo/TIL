@@ -2,7 +2,7 @@
 id: 01c90d03-68f0-470b-b9e3-d6c2834baad4
 title: Sequential Anomaly Detection using Inverse Reinforcement Learning
 created_time: 2024-01-17T04:52:00.000Z
-last_edited_time: 2024-01-25T02:55:00.000Z
+last_edited_time: 2024-02-01T09:04:00.000Z
 하위 항목: []
 subclass: Anomaly Detection
 class: Paper
@@ -56,9 +56,45 @@ pdf: https://arxiv.org/pdf/2004.10398.pdf
 
 ## Forward and Inverse RL Basics
 
+*   We assume the environment is modeled as a **Markov Decision Process** \braket{ S,A,T,R,\gamma,p\_0} where S is the finite set of states; A is the finite set of actions, T(s,a,s') is the state transition probability of changing to state s' from s when action a is taken; r(s,a) is the immediate reward of executing action a in state s; \gamma\in\[0,1) is the discount factor; p\_0(s) denotes the probability of starting in state s
+
+*   In (forward) RL, \pi^\* is the policy to be learned, but in IRL reward function is not explicitly given. We need to learn r^\*(\cdot) such that
+
+    ```undefined
+    \mathbb E\left[\sum_{i=0}^\infty \gamma^t r^*(s_t,a_t)|\pi^*\right]\ge \mathbb E\left[\sum_{i=0}^\infty \gamma^t r^*(s_t,a_t)|\pi\right] ,\forall \pi
+    ```
+
+*   In IRL, not optimal policy is given but samples or demonstrations are given.
+
 ## Maximum Entropy IRL
 
-## Bayesian Framework for IRL
+*   Maximum Entropy IRL framework models the demonstrations using a Boltzmann distribution
+
+    ```undefined
+    p(\tau|\theta)=\frac1Z\exp(r(\tau|\theta))
+    ```
+
+*   The parameters \theta are chosen to maximize the likelihood of the deminstrated trajectories
+
+    ```undefined
+    \begin{aligned}\mathcal L(\theta) &= \frac 1M\sum_{m=1}^M\log p(\tau_m|\theta)\\&=\frac1M\sum_{m=1}^M R(\tau_m|\theta)-\log\sum_\tau\exp(R(\tau|\theta))\end{aligned}
+    ```
+
+## Bayesian Framework for IRL(BIRL)
+
+> 💡 Use a prior to encode the reward preference and to formulate the compatibility with the demonstrator’s policy as likelihood
+
+*   Prior is,
+
+    ```undefined
+    P(r)=\prod_{(s,a)\in\Tau} P(r(s,a))
+    ```
+
+*   The likelihood in BIRL is defined as independent exponential distribution analogus to the softmax function
+
+    ```undefined
+    \begin{aligned}P(r|\Tau)&=\prod_{\tau\in\Tau}\prod_{(s,a)\in\tau}P(a|s,r)\\&\propto P(\Tau|r)P(r)\end{aligned}
+    ```
 
 # Method
 
