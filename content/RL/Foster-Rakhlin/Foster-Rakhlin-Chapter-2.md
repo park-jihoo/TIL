@@ -8,10 +8,10 @@ subclass: Foster&Rakhlin
 class: RL
 작성일시: 2023-10-15T07:25:00.000Z
 pdf: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240203%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240203T004150Z&X-Amz-Expires=3600&X-Amz-Signature=9ee004381c17caf59c852288e748623edcb8cc0d8c8af3703fd983f5387c8f82&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/184eb728-0fe6-4cbc-bd94-9f27ef8f958a/Foster_Rakhlin_Notes.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240204%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240204T004557Z&X-Amz-Expires=3600&X-Amz-Signature=d2ed652c49ce22c13d20bdb6eec2dac01e47302e5a698e31ac0c795d2a1a05bc&X-Amz-SignedHeaders=host&x-id=GetObject
 상위 항목: []
 _thumbnail: >-
-  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240203%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240203T004152Z&X-Amz-Expires=3600&X-Amz-Signature=b78f011bb956491896b9925acbf1cce14f763be03716aad6a2d298dd44b8ac27&X-Amz-SignedHeaders=host&x-id=GetObject
+  https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240204%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240204T004557Z&X-Amz-Expires=3600&X-Amz-Signature=b336327495a48f1235c5e62827cb1982a2896743f3e2969dc60c00b360bdfe9a&X-Amz-SignedHeaders=host&x-id=GetObject
 
 ---
 
@@ -147,9 +147,9 @@ _thumbnail: >-
     \forall t\in[T],\pi\in\Pi,\ f^*(\pi)\in[\underline f^t(\pi), \bar f^t(\pi)]
     ```
 
-![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240203%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240203T004152Z\&X-Amz-Expires=3600\&X-Amz-Signature=b78f011bb956491896b9925acbf1cce14f763be03716aad6a2d298dd44b8ac27\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240204%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240204T004557Z\&X-Amz-Expires=3600\&X-Amz-Signature=b336327495a48f1235c5e62827cb1982a2896743f3e2969dc60c00b360bdfe9a\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
-![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240203%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240203T004151Z\&X-Amz-Expires=3600\&X-Amz-Signature=57acdc3fddf07a6678d2e20fc1c1b6618f81050b9bf99d0707619e7dbc060f9f\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![Illustration of the UCB Algorithm. \pi^t optimistically ensures that the suboptimality never greater exceeds the confidence width](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/473a2256-19a8-4682-ac9e-0a814f88e374/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240204%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240204T004557Z\&X-Amz-Expires=3600\&X-Amz-Signature=b336327495a48f1235c5e62827cb1982a2896743f3e2969dc60c00b360bdfe9a\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 > Lemma 7
 
@@ -293,7 +293,7 @@ _thumbnail: >-
 
 *   This algorithm dispenses with Assumption 1 (Rewards are generated independently via underlying model)
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/529eb058-6fe6-4df7-9d4b-e4731b42d41d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240203%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240203T004151Z\&X-Amz-Expires=3600\&X-Amz-Signature=7d52456065a354ca71b45799bcee8ef8f359b5f8ca265228f8c3e466e70aa639\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/529eb058-6fe6-4df7-9d4b-e4731b42d41d/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240204%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240204T004557Z\&X-Amz-Expires=3600\&X-Amz-Signature=c8f86cfb2680a39fb1a1d06659c1dde29263327ecdc815dea7f80c47ab10342c\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 *   The non-stochastic nature of rewards add new “adversarial data” dimension to the problem.
 
