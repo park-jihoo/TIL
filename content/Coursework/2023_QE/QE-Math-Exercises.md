@@ -204,7 +204,7 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
 
     	- [https://matrixcalc.org/ko/det.html#determinant-Gauss({{2,0,1,2,0},{2,-1,0,1,1},{0,1,2,1,2},{-2,0,2,-1,2},{2,0,0,1,1}})](https://matrixcalc.org/ko/det.html#determinant-Gauss%28%7B%7B2,0,1,2,0%7D,%7B2,-1,0,1,1%7D,%7B0,1,2,1,2%7D,%7B-2,0,2,-1,2%7D,%7B2,0,0,1,1%7D%7D%29) 돌려본 거 첨부
 
-    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240209%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240209T004124Z&X-Amz-Expires=3600&X-Amz-Signature=7d7bd2e3d25bfc495b3240e30b0d0e39934a5eb66edf3f0e26631cd9a3c8b9e9&X-Amz-SignedHeaders=host&x-id=GetObject)
+    	![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/d7063d19-cfca-4f2e-bf03-8612cc0c7418/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240210%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240210T004100Z&X-Amz-Expires=3600&X-Amz-Signature=d059f468a5fc903f13716861667354a3e1578fe2f4022776f4c9203deec262dc&X-Amz-SignedHeaders=host&x-id=GetObject)
 
     ## Question 4.3
 
@@ -541,10 +541,6 @@ pdf: https://mml-book.github.io/book/mml-book.pdf
     		```
 
     	- \frac{\partial g}{\partial \nu}
-
-    		```undefined
-    		\frac{\partial g}{\partial \nu} = \frac{\partial}{\partial \nu} \left(\log p(x, z) - \log q(z, \nu)\right) = 0 - \frac{\partial}{\partial \nu} \log q(z, \nu) = -\frac{1}{q(z, \nu)} \frac{\partial q(z, \nu)}{\partial \nu}
-    		```
 
     	- \frac{\partial g}{\partial z}
 
