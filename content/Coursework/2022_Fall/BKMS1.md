@@ -591,35 +591,6 @@ class: Coursework
 
 # Isolation
 
-    - Transaction Notation
-
-    	- Letter for object
-
-    	- Number to distinguish transaction
-
-    	- R read, W write, RW for read+write, C commit, A abort
-
-    	- $R1(A)$ means transaction 1 reads object 1
-
-    - Isolation Anomalies: destroy illusion of sequential execution
-
-    	- Dirty Reads: Read data from uncommitted transactions (Wx(A)Ry(A))
-
-    	- Unrepeatable Reads: Return different result with single transaction when operations reads same row twice(중간에 another transaction이 modify 후 commit함) (Rx(A)Wy(A)CyRx(A))
-
-    	- Phantom reads: row를 2번 읽는 사이에 다른 트랜잭션에서 insert to commit이 일어나 유령처럼 느껴지는 read
-
-    	- Lost Updates: two transaction update same row to different value (Wx(A)Wy(A))
-
-    - Isolation level
-
-    |                  | Dirty Reads | Non-Repeatable Reads | Phantom Reads |
-    |------------------|-------------|----------------------|---------------|
-    | Read uncommitted | Yes         | Yes                  | Yes           |
-    | Read Committed   | No          | Yes                  | Yes           |
-    | Repeatable Read  | No          | No                   | Yes           |
-    | Serializable     | No          | No                   | No            |
-
 # Concurrency Control
 
     - Schedule : ordered steps from multiple transactions
