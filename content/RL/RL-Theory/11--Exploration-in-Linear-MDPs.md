@@ -58,7 +58,7 @@ _thumbnail: https://www.notion.so/images/page-cover/webb3.jpg
 
 *   Generalize tabular MDP: \phi(s,a) is one-hot vector, and P(\cdot|s,a) = P\_\phi(s,a) where P \in \R^{|S|\times|SA|} is the transition matrix
 
-![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/73c05bfe-8868-449c-bc3e-1445af5a630f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240304%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240304T004242Z\&X-Amz-Expires=3600\&X-Amz-Signature=7a7cc2a8c14bcad7eebacdeaaca4810b923728747101a10c314185eb1d655119\&X-Amz-SignedHeaders=host\&x-id=GetObject)
+![](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d54cb71-779e-4bdf-883b-5ad3380d7d11/73c05bfe-8868-449c-bc3e-1445af5a630f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Credential=AKIAT73L2G45HZZMZUHI%2F20240305%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20240305T004152Z\&X-Amz-Expires=3600\&X-Amz-Signature=2bb9081ec4cbdf0e5394bdaab34051de01ee2245512652edc0c1007784d07060\&X-Amz-SignedHeaders=host\&x-id=GetObject)
 
 ### Low-Rank
 
